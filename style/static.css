@@ -1,9 +1,14 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+ 
+}
 /* ESTILIZAÇÃO DA NAVBAR */
 body, html
 		{
 			padding: 0;
 			margin: 0px;
-			font-family: verdana,sans-serif;
+      font-family: verdana,sans-serif;
+      
 		}
 		main
 		{
