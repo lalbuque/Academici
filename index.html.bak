@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/static.css">
     <title>Home</title>
-
-	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
-	<script type="text/javascript" src="engine0/jquery.js"></script>
-	<!-- End WOWSlider.com HEAD section --></head>
+</head>
 <body>
     <!-- COMEÇA A NAVBAR -->
     <nav>
@@ -30,25 +26,7 @@
 
     <section class="conteudo">
 
-      <div>
-	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container0">
-	<div class="ws_images"><ul>
-		<li><img src="data0/images/capelo7.jpg" alt="Canal de alunos egressos" title="Canal de alunos egressos" id="wows0_0"/>
-</li>
-		<li><a href="http://wowslider.net"><img src="data0/images/imaagem2.jpg" alt="javascript image slider" title="Informação" id="wows0_1"/></a>Status dos alunos egressos no mercado de trabalho</li>
-		<li><img src="data0/images/socialfarmacia.jpg" alt="Comunicação " title="Comunicação " id="wows0_2"/>Acesso a eventos e comunição direta com a universidade.</li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#" title="Canal de alunos egressos"><span><img src="data0/tooltips/capelo7.jpg" alt="Canal de alunos egressos"/>1</span></a>
-		<a href="#" title="Informação"><span><img src="data0/tooltips/imaagem2.jpg" alt="Informação"/>2</span></a>
-		<a href="#" title="Comunicação "><span><img src="data0/tooltips/socialfarmacia.jpg" alt="Comunicação "/>3</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.8</div>
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="engine0/wowslider.js"></script>
-	<script type="text/javascript" src="engine0/script.js"></script>
-	<!-- End WOWSlider.com BODY section -->  <!-- INICIO CARROSSEL -->
+      <div>  <!-- INICIO CARROSSEL -->
 
 
 
