@@ -572,4 +572,75 @@
     }
   }
   
+  #form{
+    width: 550px;
+    height: 450px;
+    background: #edeff1;
+    margin: 50px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
   
+  #form input {
+
+    display: block;
+    font-weight: bold;/*aplica o negrito na letra*/
+    margin: 10px auto;
+  background: #fff;
+  border: 0px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  
+  }
+
+  #mensagem{
+
+    display: block;
+    font-weight: bold;/*aplica o negrito na letra*/
+    margin: 5px auto;
+  background: #fff;
+  border: 0px;
+  padding: 10px;
+  width: 300px;
+  height: 100px ;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  
+  }
+  #form input:focus{
+    border: 2px solid #1abc9d
+  }
+
+  #form input[type="submit"]{
+    display: block;
+    background: #1abc9d;
+    width: 314px;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    border: 0px;
+    margin: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  
+  #form input[type="submit"]:hover{
+    background: #09cca6
+  }
