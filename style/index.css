@@ -6,3 +6,10 @@ header {
     min-height: 500px;
     
   }
+
+  
+#contact {
+    color: white;
+    background-color: #3499DB;
+    padding: 3rem 0;
+  }
