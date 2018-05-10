@@ -12,4 +12,319 @@ header {
     color: white;
     background-color: #3499DB;
     padding: 3rem 0;
+<<<<<<< HEAD
+  }
+  
+  .fizz {
+    font-size: 6rem;
+    color: #3499DB;
+  }
+  
+  #skills i {
+    padding: 0 10px;
+  }
+  
+  #skills p {
+    font-size: 1.8rem;
+  }
+  
+  @media (max-width: 1024px) {
+    #skills p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #skills p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  
+  /* Contact */
+  
+  #contact {
+    color: white;
+    background-color: #3499DB;
+    padding: 3rem 0;
+  }
+  
+  #contact i,
+  #contact .glyphicon,
+  #contact img {
+    padding: 10px 10px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  #contact p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 1024px) {
+    #contact p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #contact p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  #contact .glyphicon,
+  #contact .fa {
+    color: white;
+  }
+  
+  #contact .glyphicon:hover,
+  #contact .fa:hover {
+    color: #C9C9C9;
+    transition: all 0.4s;
+  }
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   */
+  
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  
+  /*
+   * Extends the .visuallyhidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+  
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster:
+                                     http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    img {
+      max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  #form{
+    width: 550px;
+    height: 450px;
+    background: #edeff1;
+    margin: 50px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+  
+  #form input {
+
+    display: block;
+    font-weight: bold;/*aplica o negrito na letra*/
+    margin: 10px auto;
+  background: #fff;
+  border: 0px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  
+  }
+
+  #mensagem{
+
+    display: block;
+    font-weight: bold;/*aplica o negrito na letra*/
+    margin: 5px auto;
+  background: #fff;
+  border: 0px;
+  padding: 10px;
+  width: 300px;
+  height: 100px ;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  
+  }
+  #form input:focus{
+    border: 2px solid #1abc9d
+  }
+
+  #form input[type="submit"]{
+    display: block;
+    background: #1abc9d;
+    width: 314px;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    border: 0px;
+    margin: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  
+  #form input[type="submit"]:hover{
+    background: #09cca6
+=======
+>>>>>>> ca474187e2a6d9099c3dae73f51db3e20490747f
   }
