@@ -573,11 +573,11 @@
   }
   
   #form{
-    width: 550px;
-    height: 450px;
+    width: 42%;
+    height: 42%;
     background: #edeff1;
-    margin: 50px auto;
-    padding-top: 10px;
+    margin: 1% auto;
+    padding-top: 1%;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -587,11 +587,11 @@
 
     display: block;
     font-weight: bold;/*aplica o negrito na letra*/
-    margin: 10px auto;
+    margin:10px auto;
   background: #fff;
   border: 0px;
   padding: 10px;
-  width: 400px;
+  width: 75% ;
   font-size: 16px;
    border: 2px solid #fff;
   transition: all 0.3s ease;
@@ -603,24 +603,9 @@
   }
 
   #mensagem{
-
-    display: block;
-    font-weight: bold;/*aplica o negrito na letra*/
-    margin: 5px auto;
-  background: #fff;
-  border: 0px;
-  padding: 10px;
-  width: 400px;
-  height: 100px ;
-  font-size: 16px;
-   border: 2px solid #fff;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  
-  
+  height: 60px ;
   }
+
   #form input:focus{
     border: 2px solid #1abc9d
   }
@@ -628,7 +613,7 @@
   #form input[type="submit"]{
     display: block;
     background:  #3499DB;
-    width: 400px;
+    width: 75%;
     padding: 13px;
     cursor: pointer;
     color: #fff;
