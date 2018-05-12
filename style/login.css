@@ -12,7 +12,7 @@
   }
 
   header {
-    background-image: linear-gradient(rgba( 52, 222, 219, 0.8), rgba( 52, 153, 219, 0.8)), url("../images/img_index.jpg");
+    background-image: url("../images/login.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
