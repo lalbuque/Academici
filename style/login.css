@@ -21,312 +21,233 @@
   }
 
   /* css do form */
+ 
 
-  /**
- * General variables
- */
-$bdrds: 3px
-
-$white: #fff
-$black: #000
-$gray: #ccc
-$salmon: #e8716d
-$smoky-black: rgba(#222222, .85)
-
-$ff: 'Montserrat', sans-serif
-$ff-body: 12px
-$ff-light: 300
-$ff-regular: 400
-$ff-medium: 500
-
-
-/**
- * General configs
- */
-*
-  box-sizing: border-box
-
-body
-  font-family: $ff
-  font-size: $ff-body
-  line-height: 1em
+  body, html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: #555;
+    height:100%;
+  }
   
-button
-  background-color: transparent
-  padding: 0
-  border: 0
-  outline: 0
-  cursor: pointer
+  * {margin:0;padding:0;border:0;}
   
-input
-  background-color: transparent
-  padding: 0
-  border: 0
-  outline: 0
+  .container {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
   
-  &[type="submit"]
-    cursor: pointer
-    
-  &::placeholder
-    font-size: .85rem
-    font-family: $ff
-    font-weight: $ff-light
-    letter-spacing: .1rem
-    color: $gray
-
-    
-/**
- * Bounce to the left side
- */
-@keyframes bounceLeft
-  0%
-      transform: translate3d(100%, -50%, 0)
-
-  50%
-      transform: translate3d(-30px, -50%, 0)
-
-  100%
-      transform: translate3d(0, -50%, 0)
-
-/**
- * Bounce to the left side
- */
-@keyframes bounceRight
-  0%
-    transform: translate3d(0, -50%, 0)
-
-  50%
-    transform: translate3d(calc(100% + 30px), -50%, 0)
-
-  100%
-    transform: translate3d(100%, -50%, 0)
-
-/**
- * Show Sign Up form
- */
-@keyframes showSignUp
-  100%
-    opacity: 1
-    visibility: visible
-    transform: translate3d(0, 0, 0)
+  .login {
+    width:400px;
+    transition: all 0.2s ease-out;
+    position: relative;
+    border-radius: 2px;
+    background: hsla(0,0%,90%, 1);
+    box-shadow: 0 10px 10px -10px hsla(0,0%,0%,0.2); 
+  }
+  
+  .login__form {
+    background:white;
+    padding: 3em 3em 4em 3em;
+    transition: all 0.2s ease-out;
+  }
+  
+  .login:hover {
+    transform: scale(1.05);
+    box-shadow: 0 40px 10px -20px hsla(0,0%,0%,0.1); 
+  }
+  
+  .login__iframe {
+    display:none;
+    position: relative;
+    z-index: 0;
+    width:100%;
+    height:300px;
+  }
+  
+  .login__title {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    color:  #23b1ca;
+  }
+  
+  .login__title--grey {
+    color: #bbb;
+    font-size: 0.8em;
+  }
+  
+  input {
+    outline: none;
+ 
+    font-size: 1em;
+    display:block;
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+    background:rgb(245,245,245);
+  }
   
 
-/**
- * Page background
- */
-.user
-  display: flex
-  justify-content: center
-  align-items: center
-
-  width: 100%
-  height: 100vh
-  background: url('https://goo.gl/YRxqs1') no-repeat center
-  background-size: cover
-
-  &_options-container
-    position: relative
-    width: 80%
-
-  &_options-text
-    display: flex
-    justify-content: space-between
-    width: 100%
-    background-color: $smoky-black
-    border-radius: $bdrds
-
-
-/**
- * Registered and Unregistered user box and text
- */
-.user_options-registered,
-.user_options-unregistered
-  width: 50%
-  padding: 75px 45px
-
-  color: $white
-  font-weight: $ff-light
-
-.user_registered-title,
-.user_unregistered-title
-  margin-bottom: 15px
-  font-size: 1.66rem
-  line-height: 1em
-
-.user_unregistered-text,
-.user_registered-text
-  font-size: .83rem
-  line-height: 1.4em
-
-.user_registered-login,
-.user_unregistered-signup
-  margin-top: 30px
-  border: 1px solid $gray
-  border-radius: $bdrds
-  padding: 10px 30px
-
-  color: $white
-  text-transform: uppercase
-  line-height: 1em
-  letter-spacing: .2rem
-
-  transition: background-color .2s ease-in-out, color .2s ease-in-out
-
-  &:hover
-    color: $smoky-black
-    background-color: $gray
-
-
-/**
- * Login and signup forms
- */
-.user_options-forms
-  position: absolute
-  top: 50%
-  left: 30px
-
-  width: calc(50% - 30px)
-  min-height: 420px
-  background-color: $white
-  border-radius: $bdrds
-  box-shadow: 2px 0 15px rgba($black, .25)
-  overflow: hidden
-
-  transform: translate3d(100%, -50%, 0)
-  transition: transform .4s ease-in-out
-
-  .user_forms-login
-    transition: opacity .4s ease-in-out, visibility .4s ease-in-out
-
-  .forms
-    &_title
-      margin-bottom: 45px
-
-      font-size: 1.5rem
-      font-weight: $ff-medium
-      line-height: 1em
-      text-transform: uppercase
-      color: $salmon
-      letter-spacing: .1rem
-
-    &_field
-      &:not(:last-of-type)
-        margin-bottom: 20px
-
-    &_field-input
-      width: 100%
-      border-bottom: 1px solid $gray
-      padding: 6px 20px 6px 0
-
-      font-family: $ff
-      font-size: 1rem
-      font-weight: $ff-light
-      color: darken($gray, 30%)
-      letter-spacing: .1rem
-
-      transition: border-color .2s ease-in-out
-
-      &:focus
-        border-color: darken($gray, 30%)
-
-    &_buttons
-      display: flex
-      justify-content: space-between
-      align-items: center
-
-      margin-top: 35px
-
-      &-forgot
-        font-family: $ff
-        letter-spacing: .1rem
-        color: $gray
-        text-decoration: underline
-
-        transition: color .2s ease-in-out
-
-        &:hover
-          color: darken($gray, 10%)
-
-      &-action
-        background-color: $salmon
-        border-radius: $bdrds
-        padding: 10px 35px
-
-        font-size: 1rem
-        font-family: $ff
-        font-weight: $ff-light
-        color: $white
-        text-transform: uppercase
-        letter-spacing: .1rem
-
-        transition: background-color .2s ease-in-out
-
-        &:hover
-          background-color: darken($salmon, 10%)
-
-  .user_forms-signup,
-  .user_forms-login
-    position: absolute
-    top: 70px
-    left: 40px
-
-    width: calc(100% - 80px)
-
-    opacity: 0
-    visibility: hidden
-    transition: opacity .4s ease-in-out, visibility .4s ease-in-out, transform .5s ease-in-out
-
-  .user_forms-signup
-    transform: translate3d(120px, 0, 0)
-
-    .forms_buttons
-      justify-content: flex-end
-
-  .user_forms-login
-    transform: translate3d(0, 0, 0)
-    opacity: 1
-    visibility: visible
-
-
-/**
- * Triggers
- */
-.user_options-forms
-  &.bounceLeft
-    animation: bounceLeft 1s forwards
-
-    .user_forms-signup
-      animation: showSignUp 1s forwards
-
-    .user_forms-login
-      opacity: 0
-      visibility: hidden
-      transform: translate3d(-120px, 0, 0)
-
-  &.bounceRight
-    animation: bounceRight 1s forwards
-    
-
-/**
- * Responsive 990px
- */
-@media screen and (max-width: 990px)
-  .user_options-forms
-    min-height: 350px
-    
-    .forms_buttons
-      flex-direction: column
   
-    .user_forms-login
-      .forms_buttons-action
-        margin-top: 30px
-        
-    .user_forms-signup,
-    .user_forms-login
-      top: 40px
-      
-  .user_options-registered,
-  .user_options-unregistered
-    padding: 50px 45px
+  input[type=text], input[type=password] {
+    border: 1px dashed transparent;
+    transition: all  0.2s ease-out;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #bbb;
+    width:100%;
+  }
+  
+  input[type=text]:hover, input[type=password]:hover {
+    border:1px dashed  #23b1ca;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    border:1px dashed  #23b1ca;
+    color: #23b1ca;
+  }
+  
+  .login__hi {font-size:1.2em;}
+  
+  .login__button {
+    cursor:pointer;
+    overflow:hidden;
+    text-align:left;
+    transition: all  0.1s ease-out;
+    box-sizing: border-box;
+    position: absolute;
+    background:  #23b1ca;
+    color:white;
+    margin:0;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    bottom: -1.5em;
+    left: 50%;
+    margin-left:-1.5em;
+  }
+  
+  .login__button--conf {
+    cursor:pointer;
+    transition: all  0.2s ease-in;
+    font-size:0.8em;
+    border-radius: 6px;
+    letter-spacing: 5px;
+    font-weight:bold;
+    background: none;
+    color:white;
+    margin: 2em 0;
+    border: 1px solid white;
+    padding: 1em 3em;
+  }
+  
+  
+  
+  .login__small {
+    font-size: 0.8em;
+  }
+  
+  
+  .login__abort {
+    color:white;
+  }
+  
+  .login__button:before {
+    content:'';
+    display: inline-block;
+    height:100%;
+    width:0;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+  }
+  
 
+  
+  .login[data-state=loadingPrepare] .login__form,
+  .login[data-state=loadingStart] .login__form,
+  .login[data-state=loading] .login__form,
+   .login[data-state=loadingEnd] .login__form {
+    opacity:0.5;
+  }
+  
+ 
+  
+  .login__icon {
+    display:inline-block;
+    width:100%;
+    margin: 0 auto;
+    vertical-align:middle;
+    text-align:center;
+  }
+  
+  
+  
+  .icon--ok,
+  .icon--exit,
+  .login[data-state=loadingEnd] .login__icon,
+  .login[data-state=loadingStart] .login__icon,
+  .login[data-state=loading] .login__icon,
+  .login[data-state=loadingEndOk] .icon--enter,
+  .login[data-state=loadingEndKo] .icon--enter {display:none;}
+  
+  .login[data-state=loadingEnd] .icon--ok {
+    opacity:0;
+    display:inline-block;
+  }
+  
+  .login[data-state=loadingEndOk] .icon--ok {
+    transition: all 0.4s ease-in;
+    opacity:1;
+    display:inline-block;
+  }
+  
+  .login[data-state=loadingEndKo] .icon--ko {
+    transition: all 0.4s ease-in;
+    opacity:1;
+    display:inline-block;
+  }
+  
+  .login[data-state=loadingEndOk] .login__icon i {
+    font-size:5em;
+    vertical-align:middle;
+  }
+  
+  
+  .login[data-state=loadingAccess] .login__form {
+    display:none;
+  }
+  
+  
+  .login[data-state=loadingAccess] .login__iframe {
+    display:block;
+  }
+  
+  .login[data-state=loadingAccess] {
+    width:1024px;
+    height:100%;
+  }
+  
+  .login[data-state=loadingAccess] .login__button {
+    transition: all 0.3s ease-out;
+    bottom: 100%;
+    left:100%;
+    margin-left:-6em;
+    transform: translateY(50%);
+  }
+  
+  .login[data-state=loadingAccess] .icon--ok,
+  .login[data-state=loadingAccess] .icon--enter,
+  .login[data-state=loadingAccess] .icon--ko {
+    display:none;
+  }
+  
+  .login[data-state=loadingAccess]  .icon--exit {display:inline-block;}
+
+  
+
+  /* css do botao */
+
+  
 

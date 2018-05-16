@@ -1,65 +1,65 @@
-var inP     =   $('.input-field');
-
-inP.on('blur', function () {
-    if (!this.value) {
-        $(this).parent('.f_row').removeClass('focus');
-    } else {
-        $(this).parent('.f_row').addClass('focus');
-    }
-}).on('focus', function () {
-    $(this).parent('.f_row').addClass('focus');
-    $('.btn').removeClass('active');
-    $('.f_row').removeClass('shake');
-});
-
-
-$('.resetTag').click(function(e){
-    e.preventDefault();
-    $('.formBox').addClass('level-forget').removeClass('level-reg');
-});
-
-$('.back').click(function(e){
-    e.preventDefault();
-    $('.formBox').removeClass('level-forget').addClass('level-login');
-});
-
-
-
-$('.regTag').click(function(e){
-    e.preventDefault();
-    $('.formBox').removeClass('level-reg-revers');
-    $('.formBox').toggleClass('level-login').toggleClass('level-reg');
-    if(!$('.formBox').hasClass('level-reg')) {
-        $('.formBox').addClass('level-reg-revers');
-    }
-});
-$('.btn').each(function() {
-     $(this).on('click', function(e){
-        e.preventDefault();
+(function(){
+ 
+    var $pane = $('.login'),
+        $btn = $pane.find('.login__button'),
+        $icon = $pane.find('.icon');
+    
+    
         
-        var finp =  $(this).parent('form').find('input');
-       
-       console.log(finp.html());
-       
-        if (!finp.val() == 0) {
-            $(this).addClass('active');
-        }
-        
-        setTimeout(function () {
+        $btn.click(function(event){
+          
+          if ($pane.attr('data-state') === '') {
+              
+              var name = $('input[type=text]').val();
+              var psw = $('input[type=password]').val();  
+              
+              
+              event.preventDefault();
+              $pane.attr('data-state', 'loadingPrepare');
+              setTimeout(function(){
+                $pane.attr('data-state', 'loadingStart'); 
+              }, 200);
+              setTimeout(function(){
+                $pane.attr('data-state', 'loading'); 
+              }, 700);
+              setTimeout(function(){
+                $pane.attr('data-state', 'loadingEnd'); 
+              }, 1250);
+              setTimeout(function(){
+                
+                if(name === 'admin' && psw === 'password') {
+                  
+                  $pane.attr('data-state', 'loadingEndOk'); 
+                  
+                  $('.login__hi').text('Hello, ' + name);
+                  
+                  $('.login__button--conf.OK').click(function(event){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $pane.attr('data-state', 'loadingAccess');
+                    $('.login__hi').text('');
+                  });
+                  
+                } else {
+                  $pane.attr('data-state', 'loadingEndKo'); 
+                  $('.login__button--conf.KO').click(function(event){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $pane.attr('data-state', '');
+                  });
+                }
+  
+              }, 1300);
             
-            inP.val('');
-            
-            $('.f_row').removeClass('shake focus');
-            $('.btn').removeClass('active');
-            
-        }, 2000);
-         
-        if(inP.val() == 0) {
-            inP.parent('.f_row').addClass('shake');
-        }
-         
-        //inP.val('');
-        //$('.f_row').removeClass('focus');
-        
-    });
-});
+      
+            }  else  {
+  
+              event.preventDefault();
+              $pane.attr('data-state', '');
+              
+            }  
+        });
+    
+  
+    
+  })();
