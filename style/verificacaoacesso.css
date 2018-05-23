@@ -44,8 +44,10 @@ h1, h2, h3, h4, h5 ,h6{
   }
   
   .form-acesso{
-    width: 64%;
-    padding-top: 12%;
+    position: absolute; /*esse aqui mexe na posição da div*/
+    width: 50%; /*esse aqui mexe na largura da div*/
+    left: 25%; /*esse aqui mexe na distância em que ela esta do lado esquerdo*/
+    padding-top: 12%; 
   }
 
   .container-acesso{
