@@ -1,0 +1,67 @@
+
+#form{
+    position: absolute;
+    width: 1190px; 
+    margin-top: 25px;
+    left: 10%;
+    height: auto;
+    border: 1px #f8f8f8 solid;
+    background: #edeff1;
+    padding: 1%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+
+  .contatoAluno{
+    display: block;
+    font-weight: bold;/*aplica o negrito na letra*/
+    margin:2% auto;
+     background: #fff;
+     border: 0px;
+     padding: 10px;
+     width: 100% ;
+     font-size: 16px;
+      border: 2px solid #fff;
+     transition: all 0.3s ease;
+     border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+  }
+
+
+/* css para agrupar divs em uma linha */
+  .contatoAluno3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+
+
+  #form input:focus{
+    border: 2px solid #1abc9d
+  }
+
+  #form input[type="submit"]{
+    display: block;
+    background:  #3499DB;
+    width: 75%;
+    padding: 1%;
+    cursor: pointer;
+    color: #fff;
+    border: 0px;
+    margin: 3% auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  
+  #form input[type="submit"]:hover{
+    background: #1abc9d;
+  }
+  
