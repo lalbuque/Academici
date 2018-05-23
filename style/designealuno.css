@@ -563,7 +563,11 @@ input.hidden {
 
 /*FIM CSS Conteudo*/
 
-#geral{
-	background-image: url(../images/img_login.jpg);
-	height: 100%;
+body{
+  
+  background-image: url(../images/img_login.jpg);
+  background-repeat: no-repeat;
+
 }
+
+/* ***************************************************************************************** */

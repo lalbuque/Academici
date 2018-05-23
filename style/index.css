@@ -583,7 +583,7 @@
     -webkit-border-radius: 10px;
   }
   
-  #form input {
+ .contatoindex{
 
     display: block;
     font-weight: bold;/*aplica o negrito na letra*/
@@ -602,9 +602,6 @@
   
   }
 
-  #mensagem{
-  height: 80px ;
-  }
 
   #form input:focus{
     border: 2px solid #1abc9d
