@@ -8,7 +8,7 @@ main {
 }
 
 h1 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 30px;
 }
@@ -24,6 +24,7 @@ ul.dots * {
   list-style-type: none;  
 }
 ul.dots a {
+  margin-top: 10vh;
   text-decoration: none;
   font-size: 20px;
   color: #34495e;
@@ -34,6 +35,8 @@ ul.dots a:hover {
   color: #bdc3c7;
 }
 ul.dots li {
+  margin-left: -20%;
+  margin-top: 4vh;
   display: box;
   position: relative;
   width: 100%;
@@ -59,25 +62,7 @@ ul.dots li span {
   text-align: center;
   position: relative;
 }
-ul.dots li mark {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;   
-  border: 2px solid #FFF;
-  width: 20px;
-  height: 20px;  
-  background-color: #FF6B6B;
-  position: absolute;
-  top: -5px;
-  left: -10px;
-  font-size: 10px;
-  line-height: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #FFF;
-  font-weight: 700;
-}
-ul.dots li mark.big {
+l.dots li mark.big {
   width: 30px;
   height: 30px;  
   -webkit-border-radius: 30px;
@@ -569,5 +554,27 @@ body{
   background-repeat: no-repeat;
 
 }
+
+
+
+
+
+
+
+/* imagem do logo */
+
+.image-logo{
+  width: 80px;
+  height: 10vh;
+}
+
+.image-logo img{
+  margin-left: -37%;
+  margin-top: 2vh;
+  width: 100%;
+}
+
+
+/* fim do css do logo */
 
 /* ***************************************************************************************** */

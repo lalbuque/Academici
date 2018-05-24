@@ -125,7 +125,7 @@
   
   .glyphicon,
   .fa {
-    color: #3499DB;
+    color: #71d0b4;
   }
   
   
@@ -594,7 +594,7 @@
 
   #form input[type="submit"]{
     display: block;
-    background:  #3499DB;
+    background:  #71d0b4;
     width: 75%;
     padding: 1%;
     cursor: pointer;
