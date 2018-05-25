@@ -105,7 +105,10 @@ figure.snip1253.hover img {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
-/* Demo purposes only */
-body {
-  background-color: #212121;
+
+.conteudoEventos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+/* Demo purposes only */
