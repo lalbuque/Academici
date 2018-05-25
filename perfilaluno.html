@@ -11,6 +11,12 @@
 
   <link rel="stylesheet" href="style/designealuno.css">
 
+  <link rel="stylesheet" href="style/mensagensAluno.css">
+
+  <link rel="stylesheet" href="style/eventos.css">
+
+  <script type="javascript" src="javascript/eventosAluno.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -22,33 +28,28 @@
 <nav id="sidebar">
   <ul class="dots">
    
-
-      <!-- INICIO DO LOGOTIPO -->
-        <div class="image-logo">
-          <img src="images/academici.png">
-        </div>
-      <!-- FIM DO LOGOTIPO -->
-
     <li>
-      <a href="perfilaluno.html">
+      <a href="#perfilAluno">
         <span class="glyphicon glyphicon-user"></span>
       </a>
     </li>
-    <li>
-      <a href="editarperfilaluno.html">
-        <span class="glyphicon glyphicon-list-alt"></span>
-      </a>
-    </li>
+
 
     <li>
-      <a href="eventos.html">
+      <a href="#eventos">
         <span class="glyphicon glyphicon-calendar"></span>
       </a>
     </li>
 
     <li>
-      <a href="mensagens.html">
+      <a href="#mensagens">
         <span class="glyphicon glyphicon-envelope"></span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="editarperfilaluno.html">
+        <span class="glyphicon glyphicon-list-alt"></span>
       </a>
     </li>
 
@@ -57,6 +58,8 @@
 
 
 <body>
+
+<section id="perfilAluno" >
   <div class="container">
     <div class="row">
 
@@ -86,24 +89,14 @@
                   <!-- /input-group -->
                 </div>
                 <div class="col-sm-6">
-                  <h4 style="color:#014444;">Gabriele Peixoto</h4>
+                  <h4 style="color:#014444;">Gabriele Peixoto Guedes Santos</h4>
                   </span>
                 </div>
                 <div class="clearfix"></div>
                 <hr style="margin:5px 0 5px 0;">
 
-                <div class="col-sm-5 col-xs-6 title ">ID Aluno:</div>
-                <div class="col-sm-7">102030405060</div>
-                <div class="clearfix"></div>
-                <div class="bot-border"></div>
-
-                <div class="col-sm-5 col-xs-6 title ">Nome: </div>
-                <div id="nomeAluno" class="col-sm-7 col-xs-6 ">Gabriele Peixoto</div>
-                <div class="clearfix"></div>
-                <div class="bot-border"></div>
-
-                <div class="col-sm-5 col-xs-6 title ">Data nascimento:</div>
-                <div class="col-sm-7">20/11/1989</div>
+                <div class="col-sm-5 col-xs-6 title ">RA:</div>
+                <div id="raAluno" class="col-sm-7">1020304050</div>
                 <div class="clearfix"></div>
                 <div class="bot-border"></div>
 
@@ -117,18 +110,8 @@
                 <div class="clearfix"></div>
                 <div class="bot-border"></div>
 
-                <div class="col-sm-5 col-xs-6 title ">RA:</div>
-                <div id="raAluno" class="col-sm-7">5265201025</div>
-                <div class="clearfix"></div>
-                <div class="bot-border"></div>
-
-                <div class="col-sm-5 col-xs-6 title ">Ano de Formação:</div>
-                <div id="anoFormacaoAluno" class="col-sm-7">12/2010</div>
-                <div class="clearfix"></div>
-                <div class="bot-border"></div>
-
-                <div class="col-sm-5 col-xs-6 title ">Email:</div>
-                <div id="emailAluno" class="col-sm-7">gabrielepgsantos@outlook.com</div>
+                <div class="col-sm-5 col-xs-6 title ">Formação: </div>
+                <div id="formacaoAluno" class="col-sm-7">12/2010</div>
                 <div class="clearfix"></div>
                 <div class="bot-border"></div>
 
@@ -150,17 +133,125 @@
           });
         });       
       </script>
-
-
-
-
-
-
-
-
-
     </div>
   </div>
+</section>
+
+<section id="eventos">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-7 ">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Eventos</h4>
+              </div>
+              <div class="panel-body">
+    
+                <div class="box box-info">
+    
+                  <div class="box-body">
+                    <div class="conteudo">
+
+                        <figure class="snip1253">
+                            <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52"/></div>
+                            <figcaption>
+                              <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+                              <h3>The World Ended Yesterday</h3>
+                              <p>
+                                I don't need to compromise my principles, they don't have the slightest bearing on what happens to me anyway.
+                              </p>
+                            </figcaption>
+                            <footer>
+                              <div class="views"><i class="ion-eye"></i>2,907</div>
+                              <div class="love"><i class="ion-heart"></i>623</div>
+                              <div class="comments"><i class="ion-chatboxes"></i>23</div>
+                            </footer><a href="#"></a>
+                          </figure>
+
+                          <figure class="snip1253">
+                              <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52"/></div>
+                              <figcaption>
+                                <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+                                <h3>The World Ended Yesterday</h3>
+                                <p>
+                                  I don't need to compromise my principles, they don't have the slightest bearing on what happens to me anyway.
+                                </p>
+                              </figcaption>
+                              <footer>
+                                <div class="views"><i class="ion-eye"></i>2,907</div>
+                                <div class="love"><i class="ion-heart"></i>623</div>
+                                <div class="comments"><i class="ion-chatboxes"></i>23</div>
+                              </footer><a href="#"></a>
+                            </figure>
+
+                          <figure class="snip1253">
+                            <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample59.jpg" alt="sample59"/></div>
+                            <figcaption>
+                              <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
+                              <h3>Down with this sort of thing</h3>
+                              <p>
+                                I don't need to compromise my principles, they don't have the slightest bearing on what happens to me anyway.
+                              </p>
+                            </figcaption>
+                            <footer>
+                              <div class="views"><i class="ion-eye"></i>928</div>
+                              <div class="love"><i class="ion-heart"></i>198</div>
+                              <div class="comments"><i class="ion-chatboxes"></i>23</div>
+                            </footer><a href="#"></a>
+                          </figure>
+
+
+         
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+<section id="mensagens">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-7 ">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Contato</h4>
+              </div>
+              <div class="panel-body">
+    
+                <div class="box box-info">
+    
+                  <div class="box-body">
+                    <div class="form">
+         
+
+                          <input class="contatoAluno" type="text" required maxlength="60" placeholder="E-mail">
+
+                          <select class="contatoAluno">
+                            <option>Selecione o assunto</option>
+                            <option>Informações</option>
+                            <option>Reclamação</option>
+                            <option>Elogios</option>
+                            <option>Informações sobre eventos</option>
+                          </select>
+                      
+                          <textarea class="contatoAluno" name="Mensagem" rows="10" cols="60" wrap="virtual" placeholder="Mensagem"></textarea>
+                          
+                          <input type="submit" value="Enviar">
+                         
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</section>
 
 </body>
 
