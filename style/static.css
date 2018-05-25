@@ -183,7 +183,7 @@
   }
   
   .navbar-scrolled {
-    background-color: #3499DB !important;
+    background-color: #46686f !important;
     transition: background-color 0.4s;
     box-shadow: 0 0 10px 2px;
   }
@@ -216,12 +216,12 @@
   }
   
   .navbar-default .navbar-toggle:hover {
-    background-color: #3499DB !important;
+    background-color: #46686f !important;
     transition: all 0.4s;
   }
   
   .navbar-default .navbar-toggle:focus {
-    background-color: #3499DB !important;
+    background-color: #46686f !important;
   }
   
   .navbar-default .navbar-toggle .icon-bar {
@@ -258,7 +258,7 @@
   .hero-text-box .btn-default:focus{
     color: white;
     border-color: white;
-    background-color: #3499DB;
+    background-color: #46686f;
     transition: all 0.4s;
   }
   
@@ -329,7 +329,7 @@
   
   .fizz {
     font-size: 6rem;
-    color: #3499DB;
+    color: #46686f;
   }
   
   #skills i {
