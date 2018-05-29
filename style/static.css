@@ -567,15 +567,15 @@
 
   #form input {
 
-    display: block;
-    font-weight: bold;/*aplica o negrito na letra*/
-    margin:10px auto;
+  display: block;
+  font-weight: bold;/*aplica o negrito na letra*/
+  margin:10px auto;
   background: #fff;
   border: 0px;
   padding: 10px;
   width: 75% ;
   font-size: 16px;
-   border: 2px solid #fff;
+   border: 1px solid #71d0b4;
   transition: all 0.3s ease;
   border-radius: 5px;
   -moz-border-radius: 5px;

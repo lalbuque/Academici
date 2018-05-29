@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="style/verificacaoacesso.css">
 
 
+
   <script src="https://samiralibabic.github.io/portfolio/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -91,28 +92,51 @@
             </fieldset>
             <fieldset class="section">
               <h3>Complete seu cadastro:</h3>
-              <div class="row cf">
-                <div class="four col">
-                  <div class="cadastro">
-                    <input type="text" name="name" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
-                    <input type="text" name="email" id="cpf" placeholder="CPF. Ex: 44444444444">
-                    <input type="text" name="email" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
-                  </div>
+
+              <div class="dados-pessoais">
+                <div class="cadastro">
+                  <input type="text" name="name" class="input-cadastro" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
+                  <input type="text" name="cpf" class="input-cadastro" id="cpf" placeholder="CPF. Ex: 44444444444">
+                  <input type="text" name="datanasc" class="input-cadastro" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+                  <input type="text" name="email" class="input-cadastro" id="dataNasc" placeholder="Email. Ex: joaosilva@academici.com">
+                </div>
+                <div class="cadastro">
+                  <input type="text" name="empresa" class="input-cadastro" id="empresa" placeholder="Empresa Atual*">
+                  <input type="text" name="cargo" class="input-cadastro" id="cargo" placeholder="Cargo*">
+                  <input type="text" name="admissao" class="input-cadastro" id="Anoadmissao" placeholder="Ano de Admissão">
+                  <select class="contatoAluno">
+                    <option>Selecione o nível*</option>
+                    <option> Auxiliar/Operacional </option>
+                    <option> Técnico </option>
+                    <option> Estágio </option>
+                    <option> Júnior </option>
+                    <option> Pleno </option>
+                    <option> Sênior </option>
+                    <option> Supervisão/Coordenação </option>
+                    <option> Gerência </option>
+                    <option> Diretoria </option>
+
+                  </select>
+                </div>
+                <div class="cadastro">
+                  <input type="text" name="usuario" class="input-cadastro" id="usuario" placeholder="Usuario">
+                  <input type="text" name="senha" class="input-cadastro" id="senha" placeholder="Senha">
+                  <input type="text" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha">
                 </div>
               </div>
               <div class="button" id="login-button">Next</div>
             </fieldset>
             <fieldset class="section">
-              <h3>Responda o Questionario:</h3>
-              INSERIR AS QUESTOES
-              <div class="button" id="login-button">Next</div>
-            </fieldset>
-
-            <fieldset class="section">
-              <h3>Sua conta foi criada!</h3>
-              <p>Obrigrada por contribuir para os dados da instituição, agora voce podera ter acesso a todos os beneficios do
-                Login de egressos. Você tera acesso a eventos e algumas atualizações em breve.</p>
-              <div class="button" id="login-button">Next</div>
+              <h3>Cadastro quase completo!</h3>
+              <p class="instrucao">Só falta um passo para que você tenha acesso aos eventos, palestras e cursos extensivos na sua unidade. Responda
+                o quesitonário para ajudar a instituição a continuar melhorando, só vai levar 5 minutos e você irá contribuir
+                muito para os proximos estudantes.</p>
+              <p class="instrucao">Desde já agradecemos a sua colaboração. Esperamos você nos proximos eventos.</p>
+              <p class="instrucao">
+                <strong>P.S.:</strong> Não esqueça de manter seu cadastro atualizado para que possamos sempre te enviar novidades!</p>
+              <a href="questionario.html">
+                <div class="button" id="login-button">Responder Questionário</div>
+              </a>
             </fieldset>
           </form>
         </div>
