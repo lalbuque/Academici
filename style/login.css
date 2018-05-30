@@ -5,7 +5,7 @@
 
 
 #login-footer {
-    color: #46686f;
+    color: #72b2bb;
     background-color: white;
     padding: 3rem 0;
     font-size: 1.6rem;
@@ -70,11 +70,11 @@
   .login__title {
     margin-bottom: 2em;
     font-size: 1.2em;
-    color:  #71d0b4;
+    color:  #5ba58f;
   }
   
   .login__title--grey {
-    color: #bbb;
+    color: #7b7a7a;
     font-size: 0.8em;
   }
   
@@ -95,17 +95,17 @@
     transition: all  0.2s ease-out;
     box-sizing: border-box;
     border-radius: 6px;
-    color: #bbb;
+    color: #7b7a7a;
     width:100%;
   }
   
   input[type=text]:hover, input[type=password]:hover {
-    border:1px dashed  #71d0b4;
+    border:1px dashed  #5ba58f;
   }
   
   input[type=text]:focus, input[type=password]:focus {
-    border:1px dashed  #71d0b4;
-    color: #71d0b4;
+    border:1px dashed  #5ba58f;
+    color: #5ba58f;
   }
   
   .login__hi {font-size:1.2em;}
@@ -117,7 +117,7 @@
     transition: all  0.1s ease-out;
     box-sizing: border-box;
     position: absolute;
-    background:  #71d0b4;
+    background:  #5ba58f;
     color:white;
     margin:0;
     height: 3em;
@@ -252,7 +252,7 @@
     width: 100%;
       margin-top: 35px;
       padding:  15px 10px;
-      background: #71d0b4;
+      background: #5ba58f;
       color: #fff;
       text-transform: uppercase;
       border: none;

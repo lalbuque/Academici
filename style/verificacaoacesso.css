@@ -98,8 +98,8 @@ fieldset{
 }
 
 .steps li.is-active{
-  border-bottom: 1px solid  #71d0b4;
-  color:  #71d0b4;
+  border-bottom: 1px solid  #5ba58f;
+  color:  #5ba58f;
 }
 
 /* FORM */
@@ -143,7 +143,7 @@ fieldset{
 }
 
 .form-wrapper .button, .form-wrapper .submit{
-  background-color:  #71d0b4;
+  background-color:  #5ba58f;
  
   padding: 8px 30px;
   color: #fff;
@@ -203,7 +203,7 @@ fieldset{
   height: 30px;
   line-height: 30px;
   border-radius: 100%;
-  background-color:  #71d0b4;
+  background-color:  #5ba58f;
   color: #fff;
   display: none;
 }
@@ -218,11 +218,11 @@ fieldset{
 }
 
 .form-wrapper input[type="radio"]:checked + label{
-  border: 1px solid  #71d0b4;
+  border: 1px solid  #5ba58f;
 }
 
 .form-wrapper input[type="radio"]:checked + label h4{
-  color:  #71d0b4;
+  color:  #5ba58f;
 }
 
 
@@ -256,7 +256,7 @@ select{
   padding: 10px;
   width: 75% ;
   font-size: 16px;
-   border: 1px solid #71d0b4;
+   border: 1px solid #5ba58f;
   transition: all 0.3s ease;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -309,7 +309,7 @@ select{
 /*buttons*/
 #msform .action-button {
 	width: 100px;
-	background: #67d5bf;
+	background: #5ba58f;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
@@ -319,7 +319,7 @@ select{
 	margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #67d5bf;
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #5ba58f;
 }
 /*headings*/
 .fs-title {
@@ -380,7 +380,7 @@ select{
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-	background: #67d5bf;
+	background: #5ba58f;
 	color: white;
 }
 

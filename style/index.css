@@ -363,7 +363,7 @@
   
   #contact {
     color: white;
-    background-color: #46686f;
+    background-color: #3b8791;
     padding: 3rem 0;
   }
   
@@ -604,7 +604,7 @@
 
 
   #form input:focus{
-    border: 2px solid #1abc9d
+    border: 2px solid #5ba58f;
   }
 
   #form input[type="submit"]{
@@ -624,6 +624,6 @@
   }
   
   #form input[type="submit"]:hover{
-    background: #1abc9d;
+    background: #5ba58f;
   }
   

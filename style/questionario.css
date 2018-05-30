@@ -15,3 +15,17 @@
 
 
 /* fim do css */
+
+
+.paragrafo{
+    display: inline-flex;
+  
+}
+
+#resposta21{
+    border: 2px solid #1abc9d;
+}
+
+#resposta22{
+    border: 2px solid #1abc9d;
+}

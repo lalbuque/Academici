@@ -125,7 +125,7 @@
   
   .glyphicon,
   .fa {
-    color: #71d0b4;
+    color: #5ba58f;
   }
   
   
@@ -183,7 +183,7 @@
   }
   
   .navbar-scrolled {
-    background-color: #46686f !important;
+    background-color: #72b2bb !important;
     transition: background-color 0.4s;
     box-shadow: 0 0 10px 2px;
   }
@@ -216,12 +216,12 @@
   }
   
   .navbar-default .navbar-toggle:hover {
-    background-color: #46686f !important;
+    background-color: #72b2bb !important;
     transition: all 0.4s;
   }
   
   .navbar-default .navbar-toggle:focus {
-    background-color: #46686f !important;
+    background-color: #72b2bb !important;
   }
   
   .navbar-default .navbar-toggle .icon-bar {
@@ -258,7 +258,7 @@
   .hero-text-box .btn-default:focus{
     color: white;
     border-color: white;
-    background-color: #46686f;
+    background-color: #72b2bb;
     transition: all 0.4s;
   }
   
@@ -329,7 +329,7 @@
   
   .fizz {
     font-size: 6rem;
-    color: #46686f;
+    color: #72b2bb;
   }
   
   #skills i {
@@ -575,7 +575,7 @@
   padding: 10px;
   width: 75% ;
   font-size: 16px;
-   border: 1px solid #71d0b4;
+   border: 1px solid #5ba58f;
   transition: all 0.3s ease;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -589,12 +589,12 @@
   }
 
   #form input:focus{
-    border: 2px solid #1abc9d
+    border: 2px solid #5ba58f
   }
 
   #form input[type="submit"]{
     display: block;
-    background:  #71d0b4;
+    background:  #5ba58f;
     width: 75%;
     padding: 1%;
     cursor: pointer;
@@ -609,7 +609,7 @@
   }
   
   #form input[type="submit"]:hover{
-    background: #1abc9d;
+    background: #5ba58f;
   }
   
   

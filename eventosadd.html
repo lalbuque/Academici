@@ -28,7 +28,12 @@
 
 </head>
 
+
+
 <body>
+
+
+  <section id="calendario" >
     <div class="mobile-header z-depth-1">
 
         <div class="row">
@@ -39,7 +44,7 @@
           </div>
           <div class="col">
               
-            <h4>Events</h4>
+            <h4>Eventos</h4>
           </div>
         </div>
   
@@ -51,11 +56,11 @@
         <div class="sidebar-wrapper z-depth-2 side-nav fixed" id="sidebar">
   
           <div class="sidebar-title">
-            <h4>Events</h4>
+            <h4>Eventos</h4>
             <h5 id="eventDayName">SIDEBAR SUB-TITLE</h5>
           </div>
           <div class="sidebar-events" id="sidebarEvents">
-            <div class="empty-message">Sorry, no events to selected date</div>
+            <div class="empty-message">Não existe eventos para está data</div>
           </div>
   
         </div>
@@ -91,13 +96,13 @@
   
                   <div id="table-header">
                     <div class="row">
-                      <div class="col">Mon</div>
-                      <div class="col">Tue</div>
-                      <div class="col">Wed</div>
-                      <div class="col">Thu</div>
-                      <div class="col">Fri</div>
-                      <div class="col">Sat</div>
-                      <div class="col">Sun</div>
+                      <div class="col">Seg</div>
+                      <div class="col">Ter</div>
+                      <div class="col">Qua</div>
+                      <div class="col">Qui</div>
+                      <div class="col">Sex</div>
+                      <div class="col">Sab</div>
+                      <div class="col">Dom</div>
                     </div>
                   </div>
   
@@ -110,27 +115,27 @@
   
               <div class="calendar-footer">
                 <div class="emptyForm" id="emptyForm">
-                  <h4 id="emptyFormTitle">No events now</h4>
-                  <a class="addEvent" id="changeFormButton">Add new</a>
+                  <h4 id="emptyFormTitle">Novo evento</h4>
+                  <a class="addEvent" id="changeFormButton">Add Novo</a>
                 </div>
                 <div class="addForm" id="addForm">
-                  <h4>Add new event</h4>
+                  <h4>Adicionar novo evento</h4>
   
                   <div class="row">
                     <div class="input-field col s6">
                       <input id="eventTitleInput" type="text" class="validate">
-                      <label for="eventTitleInput">Title</label>
+                      <label for="eventTitleInput">Titulo</label>
                     </div>
                     <div class="input-field col s6">
                       <input id="eventDescInput" type="text" class="validate">
-                      <label for="eventDescInput">Description</label>
+                      <label for="eventDescInput">Descrição</label>
                     </div>
                   </div>
   
   
                   <div class="addEventButtons">
-                    <a class="waves-effect waves-light btn blue lighten-2" id="addEventButton">Add</a>
-                    <a class="waves-effect waves-light btn grey lighten-2" id="cancelAdd">Cancel</a>
+                    <a class="waves-effect waves-light btn blue lighten-2" id="addEventButton">Adicionar</a>
+                    <a class="waves-effect waves-light btn grey lighten-2" id="cancelAdd">Cancelar</a>
                   </div>
   
                 </div>
@@ -157,6 +162,8 @@
 
 
     <script src="javascript/adicionaevento.js"></script>
+
+  </section>
 </body>  
 
   </html>

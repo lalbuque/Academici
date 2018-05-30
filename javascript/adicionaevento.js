@@ -12,10 +12,10 @@ function createCalendar(date, side) {
   var startDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
 
   var monthTitle = document.getElementById("month-name");
-  var monthName = currentDate.toLocaleString("en-US", {
+  var monthName = currentDate.toLocaleString("pt-BR", {
     month: "long"
   });
-  var yearNum = currentDate.toLocaleString("en-US", {
+  var yearNum = currentDate.toLocaleString("pt-BR", {
     year: "numeric"
   });
   monthTitle.innerHTML = `${monthName} ${yearNum}`;
@@ -50,7 +50,7 @@ function createCalendar(date, side) {
     if (selectedDayBlock == null && i == currentDate.getDate() || selectedDate.toDateString() == new Date(currentDate.getFullYear(), currentDate.getMonth(), i).toDateString()) {
       selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), i);
 
-      document.getElementById("eventDayName").innerHTML = selectedDate.toLocaleString("en-US", {
+      document.getElementById("eventDayName").innerHTML = selectedDate.toLocaleString("pt-BR", {
         month: "long",
         day: "numeric",
         year: "numeric"
@@ -90,7 +90,7 @@ function createCalendar(date, side) {
 createCalendar(currentDate);
 
 var todayDayName = document.getElementById("todayDayName");
-todayDayName.innerHTML = "Today is " + currentDate.toLocaleString("en-US", {
+todayDayName.innerHTML = "Hoje é " + currentDate.toLocaleString("pt-BR", {
   weekday: "long",
   day: "numeric",
   month: "short"
@@ -158,10 +158,10 @@ function showEvents() {
   } else {
     let emptyMessage = document.createElement("div");
     emptyMessage.className = "empty-message";
-    emptyMessage.innerHTML = "Sorry, no events to selected date";
+    emptyMessage.innerHTML = "Não existe eventos para esta data.";
     sidebarEvents.appendChild(emptyMessage);
     let emptyFormMessage = document.getElementById("emptyFormTitle");
-    emptyFormMessage.innerHTML = "No events now";
+    emptyFormMessage.innerHTML = "Novo evento";
   }
 }
 
@@ -185,7 +185,7 @@ gridTable.onclick = function (e) {
 
   showEvents();
 
-  document.getElementById("eventDayName").innerHTML = selectedDate.toLocaleString("en-US", {
+  document.getElementById("eventDayName").innerHTML = selectedDate.toLocaleString("pt-BR", {
     month: "long",
     day: "numeric",
     year: "numeric"

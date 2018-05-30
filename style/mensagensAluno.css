@@ -15,11 +15,11 @@
 
 
  .form textarea:focus{
-    border: 2px solid #1abc9d
+    border: 2px solid #5ba58f
   }
 
   .form input:focus{
-    border: 2px solid #1abc9d
+    border: 2px solid #5ba58f
   }
 
   .form input[type="submit"]{
@@ -39,6 +39,6 @@
   }
   
   .form input[type="submit"]:hover{
-    background: #1abc9d;
+    background: #5ba58f;
   }
   
