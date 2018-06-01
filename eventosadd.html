@@ -32,14 +32,9 @@
     <ul class="dots">
     
       <li>
-        <a href="#perfilSecretaria">
+        <a href="perfilsec.html">
           <span class="glyphicon glyphicon-user"></span>
         </a>  
-      </li>
-      <li>
-        <a href="#respMensage">
-        <span class="glyphicon glyphicon-envelope"></span>
-        </a>
       </li>
           
       <li>
@@ -47,12 +42,14 @@
         <span class="glyphicon glyphicon-calendar"></span>
         </a>
       </li>  
-      
+
       <li>
-        <a href="#">
-        <span class="glyphicon glyphicon-list-alt"></span>
-        </a>  
-      </li>
+        <a href="login.html">
+        <span class="glyphicon glyphicon-off"></span>
+        </a>
+    </li>
+      
+
              
     </ul> 
   </nav>
@@ -75,13 +72,43 @@
                   <div class="box box-info">
       
                     <div class="box-body">
-                      <div class="col-sm-6">
 
+                          <div class='add_meeting'>
+                      
+                              
+                                <form>
+                                  <div>
+                                  <label>Titulo</label>
+                                  <input id="tituloEvento" type='text' placeholder=''>
+                                </div>
+                                <div>
+                                  <label>Local</label>
+                                  <input id="enderecoEvento" type='text' placeholder='Endereço'>
+                                </div>
+                                <div  class="eventosD">
+                                <div>
+                                  <label >Data</label>
+                                  <input id="dataEvento" type='date' placeholder=''>
+                                </div>
+                                <div>
+                                  <label>Inicio</label>
+                                  <input id="horarioinicioEvento" type='time' placeholder=''>
+                                </div>
+                                <div>
+                                  <label>Fim</label>
+                                  <input id="horarioFimEvento" type='time' placeholder=''>
+                                </div>
+                                </div>
+                                <div>
+                                  <label>Descrição</label>
+                                  <textarea></textarea>
+                                </div>
 
-      
-                  </div>
-      
-      
+                                <input id="button" type="submit" value="Adicionar">
+                                </form>
+                                
+                            </div>
+                      </div>
                 </div>
               </div>
             </div>
