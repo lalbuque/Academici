@@ -1,0 +1,16 @@
+
+		.table.info { width: 90%; margin: 0 auto; border-spacing: 0 6px; }
+    .table.info th, table.info td { padding: 12px; padding-right: 70px; vertical-align: center; color: rgb(68,68,68); }
+		.table.info caption { background-color: rgb(90,85,90); font-weight: bold; color: rgb(255,255,255); padding-top: .7em; padding-bottom: .7em; letter-spacing: .085em;}
+		.table.info th { text-align: left; }
+    .table.info td { background-color: rgb(170,200,209);
+      
+    }
+		.date { display: inline-block; background-color: rgb(68,68,68); color: #fff; padding: 10px; 
+			border-radius: 30%; }
+		.table.info a { color: rgb(3,95,123); text-decoration: underline; }
+    .table.info a:hover { text-decoration: none; }
+    tr{
+      border-top: solid 0.5px grey;
+      border-block-end-width: 100%
+    }
