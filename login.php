@@ -76,7 +76,7 @@
           <div class="login" data-state="">
 
 
-            <form action="" class="login__form">
+            <form method="post"  class="login__form" action="testedelogin.php">
               <p class="login__title">Insira seu Usuário e senha
                 <br />
                 <span class="login__title--grey">LEIA ATENTAMENTE AS INSTRUÇÔES</span>
@@ -94,13 +94,13 @@
 
 
               </p>
-              <input type="text" placeholder="Usuário" />
-              <input type="password" placeholder="Senha" />
+              <input type="text" placeholder="Usuário" name="user" />
+              <input type="password" placeholder="Senha" name="senha" />
 
 
               <!-- botoes -->
 
-              <button type="submit" id="login-button">Login</button>
+              <button type="submit" id="login-button" onclick=$sql >Login</button>
 
               <!-- fim dos botoes -->
             </form>
