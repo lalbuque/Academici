@@ -52,30 +52,30 @@
     <p><b>***Mantenha sempre seus dados atualizados para receber as novidades sobre eventos e cursos.</b></p>
     <h4>Informações pessoais</h4>
     <!--formulario-->
-    <input id="nomeAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="Nome completo">
+    <input id="nomeAluno" name="nome" class="contatoAluno" type="text" required maxlength="60" placeholder="Nome completo">
 
-    <input id="emailAluno" class="contatoAluno" type="email" required maxlength="60" placeholder="E-mail">
+    <input id="emailAluno" name="email" class="contatoAluno" type="email" required maxlength="60" placeholder="E-mail">
     
     <div class="contatoAluno3">
     
     <div>
     <label>Telefone:</label>
-    <input id="telAluno" class="contatoAluno" type="tel" required maxlength="60" placeholder="(xx)xxxx-xxxx">
+    <input id="telAluno" name="telefone" class="contatoAluno" type="tel" required maxlength="60" placeholder="(xx)xxxx-xxxx">
     </div>
 
     <div>
         <label>Celular:</label>
-        <input id="celularAluno" class="contatoAluno" type="tel" required maxlength="60" placeholder="(xx)xxxxx-xxxx">
+        <input id="celularAluno" name="celular" class="contatoAluno" type="tel" required maxlength="60" placeholder="(xx)xxxxx-xxxx">
     </div>
     
     <div>
       <label>Data de Nascimento:</label>
-    <input id="datanascimentoAluno" class="contatoAluno" type="date" required maxlength="60" placeholder="Data de Nascimento">
+    <input id="datanascimentoAluno" name="data_nascimento" class="contatoAluno" type="date" required maxlength="60" placeholder="Data de Nascimento">
      </div>
 
      <div>  
        <label>Sexo:</label>
-      <select class="contatoAluno">
+      <select class="contatoAluno" name="sexo">
         <option>Selecione</option>
         <option>Feminino</option>
         <option>Masculino</option>
@@ -83,33 +83,33 @@
       </div>
    </div> <!--fim div com tel sexo e nascimento -->
 
-   <input id="enderecoAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="Endereço">
+   <input id="enderecoAluno" name="rua" class="contatoAluno" type="text" required maxlength="60" placeholder="Endereço">
 
    <div class="contatoAluno3">
 
       <div>
           <label>Nº:</label>
-              <input id="celularAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="">
+              <input id="celularAluno" name="numero" class="contatoAluno" type="number" required maxlength="60" placeholder="">
       </div>
 
       <div>
       <label>CEP:</label>
-      <input id="cepAluno" class="contatoAluno" type="number" maxlength="8" placeholder="00000-000">
+      <input id="cepAluno" name="cep" class="contatoAluno" type="number" maxlength="8" placeholder="00000-000">
       </div>
   
       <div>
         <label>Bairro:</label>
-      <input id="bairroAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="">
+      <input id="bairroAluno" name="bairro" class="contatoAluno" type="text" required maxlength="60" placeholder="">
        </div>
-
+ 
        <div>
           <label>Cidade:</label>
-        <input id="cidadeAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="">
+        <input id="cidadeAluno" name="cidade" class="contatoAluno" type="text" required maxlength="60" placeholder="">
          </div>
   
        <div>  
          <label>UF:</label>
-        <select class="contatoAluno">
+        <select class="contatoAluno" name="uf" >
             
             <option>	   	</option>
             <option>	AC	</option>
@@ -145,32 +145,32 @@
 
 
 
-    <input id="CPFAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="CPF">
+    <input id="CPFAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="CPF" name="cpf">
 
-    <input id="rgAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="RG">
+    <input id="rgAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="RG" name="rg">
 
     <h4>Informações acadêmicas</h4>
 
-    <input id="universidadeAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="Universidade">
+    <input id="universidadeAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="Universidade" name="universidade">
 
-    <input id="cursoAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="Curso">
+    <input id="cursoAluno" class="contatoAluno" type="text" required maxlength="60" placeholder="Curso" name="curso">
 
     <div class="contatoAluno3">
      
       <div>
       <label>Registro do Aluno:</label>
-          <input id="raAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="RA">
+          <input id="raAluno" class="contatoAluno" type="number" required maxlength="60" placeholder="RA" name="ra">
       </div> 
 
             
       <div>
           <label>Data de início:</label>
-          <input id="anoinicioFormacaoAluno" class="contatoAluno" type="month" required maxlength="60" placeholder="Data">
+          <input id="anoinicioFormacaoAluno" class="contatoAluno" type="month" required maxlength="60" placeholder="Data" name="data_inicio">
       </div>
       
       <div>
       <label>Data de Formação:</label>
-      <input id="anoFormacaoAluno" class="contatoAluno" type="month" required maxlength="60" placeholder="Data">
+      <input id="anoFormacaoAluno" class="contatoAluno" type="month" required maxlength="60" placeholder="Data" name="data_formacao">
       </div>
   </div> 
 
@@ -178,15 +178,15 @@
 
   <div>
       <input name="Empresa" type="Text" class="contatoAluno" placeholder="Empresa atual"
-          id="empresaAluno" />
+          id="empresaAluno" name="empresa_atual"/>
   </div>
 
   <div>
       <input name="Cargo" type="text" class="contatoAluno" placeholder="Cargo atual"
-          id="cargoAluno" />
+          id="cargoAluno" name="cargo_atual" />
   </div>
 
-  <select class="contatoAluno">
+  <select class="contatoAluno" name="nivel">
       <option>Selecione o nível</option>
       <option>	Auxiliar/Operacional		</option>
       <option>	Técnico		</option>
