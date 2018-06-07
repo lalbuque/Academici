@@ -120,10 +120,12 @@ fieldset{
   -ms-transform-origin: top center;
   -o-transform-origin: top center;
   transform-origin: top center;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  /* *********************************** */
+  -webkit-transition: all 0.5s ease-in-out; 
   transition: all 0.5s ease-in-out;
   text-align: center;
+  
+  /* *********************************** */
   position: absolute;
   width: 100%;
   min-height: 332px
