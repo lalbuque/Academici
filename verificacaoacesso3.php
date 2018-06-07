@@ -6,7 +6,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>login</title>
+  <title>Primeiro Acesso</title>
   <meta name="description" content="Personal portfolio of Web Designer and Developer Samir Alibabic">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://samiralibabic.github.io/portfolio/css/normalize.css">
-
 
   <!-- Google Font montserrat -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -31,6 +30,9 @@
   <!-- css da pagina -->
   <link rel="stylesheet" href="style/static.css">
   <link rel="stylesheet" href="style/login.css">
+  <link rel="stylesheet" href="style/verificacaoacesso.css">
+
+
 
   <script src="https://samiralibabic.github.io/portfolio/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -68,53 +70,43 @@
     </nav>
 
 
-    <!-- div de instrução -->
-    <div class="instrucao">
-      <!-- Inicio do cofmrulario de login -->
-      <div class="div-form hero-text-box">
-        <div class="container">
-          <div class="login" data-state="">
+    <!-- Inicio do cofmrulario de primeiro acesso -->
+    <div class="form-acesso" id="form">
 
-
-            <form method="post"  class="login__form" action="testedelogin.php">
-              <p class="login__title">Insira seu Usuário e senha
-                <br />
-                <span class="login__title--grey">LEIA ATENTAMENTE AS INSTRUÇÔES</span>
-                <br />
-                <span class="login__title--grey">Ex-aluno:</span>
-                <br />
-                <span class="login__title--grey">
-                  <bolder> 1.</bolder> Caso não seja cadastrado, entre na aba de primeiro acesso</span>
-                <br />
-                <span class="login__title--grey">2. Não esqueça de adicionar "AL" antes do usuário cadastrado</span>
-                <br />
-                <span class="login__title--grey">3. Em caso de duvidas, acesse a pagina inicial e contate a instituição
-
-                </span>
-
-
-              </p>
-              <input type="text" placeholder="Usuário" name="user" />
-              <input type="password" placeholder="Senha" name="senha" />
-
-
-              <!-- botoes -->
-
-              <button type="submit" id="login-button" onclick=$sql >Login</button>
-
-              <!-- fim dos botoes -->
+      <div class="container-acesso">
+        <div class="wrapper">
+          <ul class="steps">
+            <li>Verificação de acesso</li>
+            <li >Completar cadastro</li>
+            <li class="is-active">Questionario</li>
+          </ul>
+          <div class="form-wrapper">
+            <form method="post" action="conexaoverificacao.php">
+              <div class="section is-active" id="fieldset">
+              <h3>Cadastro quase completo!</h3>
+              <p class="instrucao">Só falta um passo para que você tenha acesso aos eventos, palestras e cursos extensivos na sua unidade. Responda
+                o quesitonário para ajudar a instituição a continuar melhorando, só vai levar 5 minutos e você irá contribuir
+                muito para os proximos estudantes.</p>
+              <p class="instrucao">Desde já agradecemos a sua colaboração. Esperamos você nos proximos eventos.</p>
+              <p class="instrucao">
+                <strong>P.S.:</strong> Não esqueça de manter seu cadastro atualizado para que possamos sempre te enviar novidades!</p>
+              
+                <div class="button" id="login-button">Responder Questionário</div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </div>
+    <!-- Fim do cofmrulario de primeiro acesso -->
   </header>
 
   <footer id="login-footer" class="row contact">
     <h3 class="text-center">Contact</h3>
     <div class="col-xs-10 col-xs-offset-1 text-center">
       <p>
-        Você também pode nos encontrar nas redes sociaislike.
+        Você também pode nos encontrar nas redes sociais
       </p>
       <i class="fa fa-facebook" aria-hidden="true"></i>
       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -122,10 +114,12 @@
       <i class="fa fa-github" aria-hidden="true"></i>
       <i class="fa fa-free-code-camp" aria-hidden="true"></i>
       <i class="fa fa-cc" aria-hidden="true"></i>
+      <a href="https://www.codecademy.com/samiralibabic" target="_blank">
+        <i class="fa fa-cc" aria-hidden="true"></i>
+      </a>
     </div>
     <br>
   </footer>
-
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -135,7 +129,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
 
-
+  <script src="javascript/verificacaoacesso.js"></script>
 
 
 </body>
