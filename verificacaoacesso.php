@@ -85,9 +85,9 @@
           <form class="form-wrapper">
             <fieldset class="section is-active">
               <h3>Insira os dados abaixo:</h3>
-              <input type="text" name="name" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
-              <input type="text" name="email" id="cpf" placeholder="CPF. Ex: 44444444444">
-              <input type="text" name="email" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+              <input type="text" name="nome" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
+              <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444">
+              <input type="text" name="data_nascimento" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
               <div class="button" id="login-button">Próximo</div>
             </fieldset>
             <fieldset class="section">
@@ -95,16 +95,16 @@
 
               <div class="dados-pessoais">
                 <div class="cadastro">
-                  <input type="text" name="name" class="input-cadastro" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
+                  <input type="text" name="nome" class="input-cadastro" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
                   <input type="text" name="cpf" class="input-cadastro" id="cpf" placeholder="CPF. Ex: 44444444444">
-                  <input type="text" name="datanasc" class="input-cadastro" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+                  <input type="text" name="data_nascimento" class="input-cadastro" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
                   <input type="text" name="email" class="input-cadastro" id="dataNasc" placeholder="Email. Ex: joaosilva@academici.com">
                 </div>
                 <div class="cadastro">
                   <input type="text" name="empresa" class="input-cadastro" id="empresa" placeholder="Empresa Atual*">
                   <input type="text" name="cargo" class="input-cadastro" id="cargo" placeholder="Cargo*">
                   <input type="text" name="admissao" class="input-cadastro" id="Anoadmissao" placeholder="Ano de Admissão">
-                  <select class="contatoAluno">
+                <select class="contatoAluno" name="nivel_cargo">
                     <option>Selecione o nível*</option>
                     <option> Auxiliar/Operacional </option>
                     <option> Técnico </option>
