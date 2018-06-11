@@ -32,19 +32,19 @@
     <ul class="dots">
     
       <li>
-        <a href="perfilsec.html">
+        <a href="perfilsec.php">
           <span class="glyphicon glyphicon-user"></span>
         </a>  
       </li>
           
       <li>
-        <a href="eventosadd.html">
+        <a href="eventosadd.php">
         <span class="glyphicon glyphicon-calendar"></span>
         </a>
       </li>  
 
       <li>
-        <a href="login.html">
+        <a href="login.php">
         <span class="glyphicon glyphicon-off"></span>
         </a>
     </li>

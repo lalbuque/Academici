@@ -59,13 +59,13 @@
     </li>
 
     <li>
-      <a href="editarperfilaluno.html">
+      <a href="editarperfilaluno.php">
         <span class="glyphicon glyphicon-list-alt"></span>
       </a>
     </li>
 
     <li>
-      <a href="login.html">
+      <a href="login.php">
         <span class="glyphicon glyphicon-off"></span>
       </a>
     </li>
@@ -275,7 +275,7 @@
 
                 <div class="box-body">
                   <div class="form">
-                    <form action="perfilaluno.html">
+                    <form action="perfilaluno.php">
                       <!-- <input type="hidden" value="gabrielepgsantos@outlook.com" name="email" > -->
                       <input class="contatoAluno" type="text" required maxlength="60" placeholder="E-mail">
 

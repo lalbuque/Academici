@@ -52,17 +52,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <span class="glyphicon glyphicon-home" aria-label="Home" aria-hidden="true"></span>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="main-menu-items">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="login.html">Login</a>
+                            <a href="login.php">Login</a>
                         </li>
                         <li>
-                            <a href="verificacaoacesso.html">Primeiro acesso</a>
+                            <a href="verificacaoacesso.php">Primeiro acesso</a>
                         </li>
 
                     </ul>

@@ -25,19 +25,19 @@
   <ul class="dots">
         
     <li>
-      <a href="perfilaluno.html">
+      <a href="perfilaluno.php">
         <span class="glyphicon glyphicon-user"></span>
       </a>  
     </li>
  
     <li>
-      <a href="editarperfilaluno.html">
+      <a href="editarperfilaluno.php">
       <span class="glyphicon glyphicon-list-alt"></span>
       </a>
     </li>
 
     <li>
-        <a href="login.html">
+        <a href="login.php">
         <span class="glyphicon glyphicon-off"></span>
         </a>
     </li>

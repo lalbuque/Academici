@@ -44,13 +44,13 @@
     </li>
 
     <li>
-      <a href="eventosadd.html">
+      <a href="eventosadd.php">
         <span class="glyphicon glyphicon-calendar"></span>
       </a>
     </li>
 
     <li>
-      <a href="login.html">
+      <a href="login.php">
         <span class="glyphicon glyphicon-off"></span>
       </a>
     </li>
@@ -240,7 +240,7 @@
           var filepath = this.value;
           var m = filepath.match(/([^\/\\]+)$/);
           var filename = m[1];
-          $('#filename').html(filename);
+          $('#filename').php(filename);
 
         });
       </script>
