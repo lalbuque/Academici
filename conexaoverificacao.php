@@ -23,25 +23,14 @@ $nivel_cargo = $_POST ['nivel_cargo'];
 $usuario = $_POST ['usuario'];
 $senha = $_POST ['senha'];
 
-
-
-$sql =mysqli_query($conexao, "INSERT INTO cadastro (nome_completo, cpf, data_nascimento, 
+$sql =mysqli_query($conexao, "INSERT INTO alunos (nome_completo, cpf, data_nascimento, 
 email,empresa_atual, cargo_atual, admissao_ano,nivel_cargo, usuario, senha )
  VALUES ('$nome_completo','$cpf', '$data_nascimento','$email', 
  '$empresa_atual','$cargo_atual','$admissao_ano','$nivel_cargo','$usuario', '$senha')");
 
 mysqli_close($conexao);
 
-echo "<script>location.href='verificacaoacesso3.php';</script>";
+echo "<script>location.href='questionario.php';</script>";
 ?> 
 
-<?php
 
-$result =mysqli_query($conexao, "SELECT FROM cadastro WHERE (nome_completo = $nome_completo  AND cpf = $cpf AND data_nascimento = $data_nascimento)");
-    
-if ($result) {
-    echo "<script>location.href='verificacaoacesso2.php';</script>";
-} 
-
-
-?> 
