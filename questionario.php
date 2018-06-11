@@ -75,11 +75,11 @@
         <div class="form-acesso" id="form">
 
             <div class="container-acesso">
-                <div class="wrapper">
+              
 
 
                     <ul class="steps" id="steps-questionario">
-                        <li class="is-active">1</li>
+                        <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
@@ -104,10 +104,17 @@
 
 
                     </ul>
-                    <form class="form-wrapper">
-                        <fieldset class="section is-active">
+                    <form class="form-wrapper" method="post" action="conexaoquestionario.php">
+                        <div class="section is-active">
+                        <h3>Cadastro quase completo!</h3>
+              <p class="instrucao">Só falta um passo para que você tenha acesso aos eventos, palestras e cursos extensivos na sua unidade. Responda
+                o quesitonário para ajudar a instituição a continuar melhorando, só vai levar 5 minutos e você irá contribuir
+                muito para os proximos estudantes.</p>
+              <p class="instrucao">Desde já agradecemos a sua colaboração. Esperamos você nos proximos eventos.</p>
+              <p class="instrucao">
+                <strong>P.S.:</strong> Não esqueça de manter seu cadastro atualizado para que possamos sempre te enviar novidades!</p>
                             <h3>1. Em que ano você se formou?</h3>
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta1">
                                 <option>Selecione a resposta</option>
                                 <option> 2018 </option>
                                 <option> 2017 </option>
@@ -121,12 +128,9 @@
                                 <option> 2009 </option>
 
                             </select>
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
                             <h3>2. Quantos semestres você levou para completar o seu curso?</h3>
                             <!-- inicio resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta2">
                                 <option>Selecione a resposta</option>
                                 <option> 10 </option>
                                 <option> 9 </option>
@@ -135,46 +139,40 @@
                                 <option> 6 </option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
                             <h3>3. Durante sua graduação você trancou o curso?</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta3">
                                 <option>Selecione a resposta</option>
                                 <option> Sim</option>
                                 <option> Não</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                        
+                            
+                       
                             <h3>4. Durante a sua graduação você realizou estágio remunerado?</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta4">
                                 <option>Selecione a resposta</option>
                                 <option> Sim</option>
                                 <option> Não</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                            
+                       
                             <h3>5. Gênero:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta5">
                                 <option>Selecione a resposta</option>
                                 <option> Feminino</option>
                                 <option> Masculino</option>
                                 <option> Outro</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                        
                             <h3>6. Idade:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta6">
                                 <option>Selecione a resposta</option>
                                 <option> Abaixo de 21</option>
                                 <option> Entre 21 e 25</option>
@@ -185,12 +183,10 @@
                                 <option> Acima de 45</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                       
                             <h3>7. Depois que se formou, você:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta7">
                                 <option>Selecione a resposta</option>
                                 <option> Não procurou um emprego</option>
                                 <option> Não procurou um emprego, pois ja estava trabalhando</option>
@@ -198,13 +194,11 @@
                                 <option> Estava empregado e procurou mudar de emprego</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                      
                             <h3>8. Caso tenha procurado emprego após a conclusão de seu curso, qual o meio que você utilizou
                                 para isso?</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta8">
                                 <option>Selecione a resposta</option>
                                 <option> Agência do trabalhador</option>
                                 <option> Agência de emprego privado</option>
@@ -214,12 +208,10 @@
                                 <option> Outro</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                       
                             <h3>9. Em sua opinião, como ficou a sua inserção no mercado de trabalho após a conclusão do seu curso:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta9">
                                 <option>Selecione a resposta</option>
                                 <option> Mais fácil</option>
                                 <option> Inalterada</option>
@@ -227,12 +219,10 @@
                                 <option> Não tenho condições de avaliar</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                        
                             <h3>10. Quanto à atividade profissional você está atualmente:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta10">
                                 <option>Selecione a resposta</option>
                                 <option> Empregado</option>
                                 <option> Trabalho no próprio negócio/ Autônomo</option>
@@ -242,12 +232,11 @@
                                 <option> Outros</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                            
+                       
                             <h3>11. Qual a sua atual área de atuação profissional?(SOMENTE RESPONDA SE ESTIVER TRABALHANDO)</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta11">
                                 <option>Selecione a resposta</option>
                                 <option> Área vinculada indiretamente à área de graduação</option>
                                 <option> Área vinculada diretamente à área de graduação</option>
@@ -255,12 +244,11 @@
                                 <option> Fora da área de graduação por escolha pessoal</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                            
+                        
                             <h3>12. Qual o porte da empresa onde trabalha?(SOMENTE RESPONDA SE ESTIVER TRABALHANDO)</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta12">
                                 <option>Selecione a resposta</option>
                                 <option> Micro(Até 9 empregrados)</option>
                                 <option> Pequena(De 10 até 9 empregrados)</option>
@@ -270,12 +258,10 @@
                                 <option> Empresa individual (Autônomo ou profissional Liberal)</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                       
                             <h3>13. Qual a sua função/cargo atual?(SOMENTE RESPONDA SE ESTIVER TRABALHANDO)</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta13">
                                 <option>Selecione a resposta</option>
                                 <option> Direção/Gerência</option>
                                 <option> Supervisão/Chefia</option>
@@ -286,13 +272,11 @@
                                 <option> Outro</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                   
                             <h3>14. Em que faixa se enquadra o seu rendimento individual mensal?(SOMENTE RESPONDA SE ESTIVER
                                 TRABALHANDO)</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta14">
                                 <option>Selecione a resposta</option>
                                 <option> Até 2 salários (R$ 1.448,00)</option>
                                 <option> Mais de 2 até 4 salários mínimos (R$ 1.449,00 até R$ 2.896,00)</option>
@@ -302,34 +286,30 @@
                                 <option> 10 salários mínimos ou mais (acima de R$ 7.241,00)</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
+                       
                             <h3>15. Após a graduação, você frequentou ou está frequentando algum curso de pós-graduação?</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta15">
                                 <option>Selecione a resposta</option>
-                                <option> Sim</option>
                                 <option> Não</option>
                             </select>
                             <!-- fim da resposta -->
-                            <h3>Se sim, Qual?</h3>
+                            <h3>16. Se sim, Qual?</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta16">
                                 <option>Selecione a resposta</option>
                                 <option> Especialização ou MBA</option>
                                 <option> Mestrado</option>
                                 <option> Doutorado</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>16. Quais a mudança mais marcante relacionada ocorreu na sua vida profissional como contribuição
+                            
+                    
+                            <h3>17. Quais a mudança mais marcante relacionada ocorreu na sua vida profissional como contribuição
                                 do curso que concluiu?</h3>
                             <!-- Inicio da resposta -->
 
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta17">
                                 <option>Selecione a resposta</option>
                                 <option> Aumento de salário</option>
                                 <option> Oportunidade de viagem para treinamento/qualificação profissional</option>
@@ -339,13 +319,12 @@
                                 <option> Não houve mudança</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>17. Entre as alternativas a seguir, assinale a situação que melhor expressa a perspectiva profissional
+                            
+                       
+                            <h3>18. Entre as alternativas a seguir, assinale a situação que melhor expressa a perspectiva profissional
                                 futura para a sua carreira:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta18">
                                 <option>Selecione a resposta</option>
                                 <option> Estou desempregado e pretendo arrumar um emprego</option>
                                 <option> Fazer carreira na empresa onde trabalho</option>
@@ -355,26 +334,23 @@
                                 <option> Mudar da área de atuação</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>18. Com base em sua experiência como egresso, indique 3 (TRÊS) aspectos em que o curso deveria
+                     
+                            <h3>19. Com base em sua experiência como egresso, indique 3 (TRÊS) aspectos em que o curso deveria
                                 priorizar melhorias para qualificar melhor o formando para atuar no mercado de trabalho:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta19">
                                 <option>Selecione a resposta</option>
                                 <option> Sim</option>
                                 <option> Não</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>19. Qual o grau de relevância dos conteúdos ministrados durante a sua graduação para sua atuação
+                            
+                     
+                            <h3>20. Qual o grau de relevância dos conteúdos ministrados durante a sua graduação para sua atuação
                                 profissional?
                             </h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta20">
                                 <option>Selecione a resposta</option>
                                 <option> Extremamente relevante</option>
                                 <option> Relevante</option>
@@ -382,13 +358,11 @@
                                 <option> Sem relevância</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>20. No que se refere à sua cultura geral e desenvolvimento pessoal, você considera que a contribuição
+                         
+                            <h3>21. No que se refere à sua cultura geral e desenvolvimento pessoal, você considera que a contribuição
                                 do curso foi:</h3>
                             <!-- Inicio da resposta -->
-                            <select class="contatoAluno">
+                            <select class="contatoAluno"  name="pergunta21">
                                 <option>Selecione a resposta</option>
                                 <option> Extremamente relevante</option>
                                 <option> Relevante</option>
@@ -396,27 +370,22 @@
                                 <option> Sem relevância</option>
                             </select>
                             <!-- fim da resposta -->
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>21. Utilize o espaço abaixo para aprofundar sua opinião sobre algum ponto abordado pela avaliação
+                            
+                            <h3>22. Utilize o espaço abaixo para aprofundar sua opinião sobre algum ponto abordado pela avaliação
                                 ou sobre o qual ela não tratou, mas que você considera relevante e deseja se manifestar:</h3>
-                            <textarea class="contatoindex" name="Mensagem" rows="5" cols="100" wrap="virtual" placeholder="Mensagem" id="resposta21"></textarea>
+                            <textarea class="contatoindex" name="Mensagem" rows="5" cols="100" wrap="virtual" placeholder="Mensagem" id="resposta21" name="pergunta22"></textarea>
 
-                            <div class="button" id="login-button">Próximo</div>
-                        </fieldset>
-                        <fieldset class="section">
-                            <h3>22. Sugira alguma iniciativa ou projeto que possam ser promovidos pela Faculdade para manter
+                            
+                       
+                            <h3>23. Sugira alguma iniciativa ou projeto que possam ser promovidos pela Faculdade para manter
                                 o vínculo com seus ex-alunos:</h3>
-                            <textarea class="contatoindex" name="Mensagem" rows="5" cols="100" wrap="virtual" placeholder="Mensagem" id="resposta22"></textarea>
+                            <textarea class="contatoindex" name="Mensagem" rows="5" cols="100" wrap="virtual" placeholder="Mensagem" id="resposta22" name="pergunta23"></textarea>
 
-                            <a href="login.html">
-                                <div class="button" id="login-button">Fazer login</div>
-                            </a>
+                             <button type="submit" id="login-button" onclick=$sql>Fazer Login</button>
 
-                        </fieldset>
+                        </div>
                     </form>
-                </div>
+      
             </div>
         </div>
         <!-- Fim do cofmrulario de primeiro acesso -->
@@ -424,22 +393,7 @@
         </div>
     </header>
 
-    <footer id="login-footer" class="row contact">
-        <h3 class="text-center">Contact</h3>
-        <div class="col-xs-10 col-xs-offset-1 text-center">
-            <p>
-                Você também pode nos encontrar nas redes sociais
-            </p>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-        <i class="fa fa-cc" aria-hidden="true"></i>
-        </div>
-        <br>
-    </footer>
-
+  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://samiralibabic.github.io/portfolio/js/plugins.js"></script>

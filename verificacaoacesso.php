@@ -51,17 +51,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span class="glyphicon glyphicon-home" aria-label="Home" aria-hidden="true"></span>
           </a>
         </div>
         <div class="collapse navbar-collapse navbar-right" id="main-menu-items">
           <ul class="nav navbar-nav">
             <li>
-              <a href="login.html">Login</a>
+              <a href="login.php">Login</a>
             </li>
             <li>
-              <a href="verificacaoacesso.html">Primeiro acesso</a>
+              <a href="verificacaoacesso.php">Primeiro acesso</a>
             </li>
 
           </ul>
@@ -74,7 +74,7 @@
     <div class="form-acesso" id="form">
 
       <div class="container-acesso">
-        <div class="wrapper">
+ 
 
 
           <ul class="steps">
@@ -82,64 +82,20 @@
             <li>Completar cadastro</li>
             <li>Questionario</li>
           </ul>
-          <form class="form-wrapper">
-            <fieldset class="section is-active">
+          <div class="form-wrapper">
+            <form method="post" action="conexaoverificacao.php">
+            <div class="section is-active">
               <h3>Insira os dados abaixo:</h3>
               <input type="text" name="nome" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
               <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444">
               <input type="text" name="data_nascimento" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
-              <div class="button" id="login-button">Próximo</div>
-            </fieldset>
-            <fieldset class="section">
-              <h3>Complete seu cadastro:</h3>
+              <button type="submit" id="login-button" onclick=$sql>Login</button>
 
-              <div class="dados-pessoais">
-                <div class="cadastro">
-                  <input type="text" name="nome" class="input-cadastro" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
-                  <input type="text" name="cpf" class="input-cadastro" id="cpf" placeholder="CPF. Ex: 44444444444">
-                  <input type="text" name="data_nascimento" class="input-cadastro" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
-                  <input type="text" name="email" class="input-cadastro" id="dataNasc" placeholder="Email. Ex: joaosilva@academici.com">
-                </div>
-                <div class="cadastro">
-                  <input type="text" name="empresa" class="input-cadastro" id="empresa" placeholder="Empresa Atual*">
-                  <input type="text" name="cargo" class="input-cadastro" id="cargo" placeholder="Cargo*">
-                  <input type="text" name="admissao" class="input-cadastro" id="Anoadmissao" placeholder="Ano de Admissão">
-                <select class="contatoAluno" name="nivel_cargo">
-                    <option>Selecione o nível*</option>
-                    <option> Auxiliar/Operacional </option>
-                    <option> Técnico </option>
-                    <option> Estágio </option>
-                    <option> Júnior </option>
-                    <option> Pleno </option>
-                    <option> Sênior </option>
-                    <option> Supervisão/Coordenação </option>
-                    <option> Gerência </option>
-                    <option> Diretoria </option>
-
-                  </select>
-                </div>
-                <div class="cadastro">
-                  <input type="text" name="usuario" class="input-cadastro" id="usuario" placeholder="Usuario*">
-                  <input type="password" name="senha" class="input-cadastro" id="senha" placeholder="Senha*">
-                  <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*">
-                </div>
-              </div>
-              <div class="button" id="login-button">Próximo</div>
-            </fieldset>
-            <fieldset class="section">
-              <h3>Cadastro quase completo!</h3>
-              <p class="instrucao">Só falta um passo para que você tenha acesso aos eventos, palestras e cursos extensivos na sua unidade. Responda
-                o quesitonário para ajudar a instituição a continuar melhorando, só vai levar 5 minutos e você irá contribuir
-                muito para os proximos estudantes.</p>
-              <p class="instrucao">Desde já agradecemos a sua colaboração. Esperamos você nos proximos eventos.</p>
-              <p class="instrucao">
-                <strong>P.S.:</strong> Não esqueça de manter seu cadastro atualizado para que possamos sempre te enviar novidades!</p>
-              <a href="questionario.html">
-                <div class="button" id="login-button">Responder Questionário</div>
-              </a>
-            </fieldset>
-          </form>
-        </div>
+            </div>
+            
+         </form>
+          </div>
+      
       </div>
     </div>
     <!-- Fim do cofmrulario de primeiro acesso -->

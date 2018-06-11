@@ -115,7 +115,7 @@
                   <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*">
                 </div>
                 
-                <button type="submit" id="login-button" onclick=$sql>Completar Cadastro</button>
+                <button type="submit" id="login-button" onclick=$sql>Login</button>
 
               </div>
             </form>
@@ -128,24 +128,7 @@
     <!-- Fim do cofmrulario de primeiro acesso -->
   </header>
 
-  <footer id="login-footer" class="row contact">
-    <h3 class="text-center">Contact</h3>
-    <div class="col-xs-10 col-xs-offset-1 text-center">
-      <p>
-        Você também pode nos encontrar nas redes sociais
-      </p>
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-      <i class="fa fa-github" aria-hidden="true"></i>
-      <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-      <i class="fa fa-cc" aria-hidden="true"></i>
-      <a href="https://www.codecademy.com/samiralibabic" target="_blank">
-        <i class="fa fa-cc" aria-hidden="true"></i>
-      </a>
-    </div>
-    <br>
-  </footer>
+ 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
