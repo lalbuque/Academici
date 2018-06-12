@@ -12,11 +12,12 @@ mysqli_select_db($conexao,$banco) or die (mysqli_error());
 
 <?php
 
-$result =mysqli_query($conexao, "SELECT FROM cadastro WHERE (nome_completo = $nome_completo  AND cpf = $cpf AND data_nascimento = $data_nascimento)");
-    
-if ($result) {
-    echo "<script>location.href='verificacaoacesso2.php';</script>";
-} 
+$result_usuario = "SELECT * FROM alunos WHERE nome_completo = '$nome_completo' && cpf = '$cpf' && data_nascimento = '$data_nascimento' LIMIT 1";
+$resultado_usuario = mysqli_query($conn, $result_usuario);
+$resultado = mysqli_fetch_assoc($resultado_usuario);
+// if ($result_usuario) {
+//     echo "<script>location.href='verificacaoacesso2.php';</script>";
+// } 
 
 
 ?> 

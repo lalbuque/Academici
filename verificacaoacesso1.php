@@ -81,7 +81,7 @@
             <li>Questionario</li>
           </ul>
           <div class="form-wrapper">
-            <form method="post" action="conexaoverificacao.php">
+            <form method="post" action="conexaoverificacao2.php">
               <div class="section is-active" id="fieldset">
                 <h3>Insira os dados abaixo:</h3>
                 <div class="dados-pessoais">
@@ -93,7 +93,7 @@
                 
                
                 
-                <button type="submit" id="login-button" onclick=$result >Completar Cadastro</button>
+                <button type="submit" id="login-button"  >Completar Cadastro</button>
 
               </div>
             </form>

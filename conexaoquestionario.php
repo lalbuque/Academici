@@ -47,6 +47,9 @@ pergunta9, pergunta10, pergunta11, pergunta12, pergunta13, pergunta14,
   '$pergunta17', '$pergunta18', '$pergunta19', '$pergunta20', '$pergunta21', '$pergunta22', '$pergunta23')");
 
 mysqli_close($con);
+
+echo "<script>location.href='login.php';</script>";
+
 ?> 
 
 
