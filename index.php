@@ -70,7 +70,7 @@
 
 </button>
 
-<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home" aria-label="Home" aria-hidden="true"></span></a>
+<a class="navbar-brand" href="index.php"><span class="glyphicon glyphicon-home" aria-label="Home" aria-hidden="true"></span></a>
 
 </div>
 
@@ -78,9 +78,9 @@
 
 <ul class="nav navbar-nav">
 
-<li><a href="login.html">Login</a></li>
+<li><a href="login.php">Login</a></li>
 
-<li><a href="verificacaoacesso.html">Primeiro acesso</a></li>
+<li><a href="verificacaoacesso.php">Primeiro acesso</a></li>
 
 </ul>
 
