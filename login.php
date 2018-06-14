@@ -31,6 +31,7 @@
   <!-- css da pagina -->
   <link rel="stylesheet" href="style/static.css">
   <link rel="stylesheet" href="style/login.css">
+  
 
   <script src="https://samiralibabic.github.io/portfolio/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -74,9 +75,17 @@
       <div class="div-form hero-text-box">
         <div class="container">
           <div class="login" data-state="">
+          <?php 
+                        if(isset($erro)) 
+                            if(count($erro) > 0){ ?>
+                                <div class="alert alert-danger">
+                                    <?php foreach($erro as $msg) echo "$msg <br>"; ?>
+                                </div>
+                            <?php 
+                            }
+                            ?>
 
-
-            <form method="post"  class="login__form" action="testedelogin.php">
+            <form method="post"  class="login__form"  action="loginconexao.php" role="form">
               <p class="login__title">Insira seu Usuário e senha
                 <br />
                 <span class="login__title--grey">LEIA ATENTAMENTE AS INSTRUÇÔES</span>
@@ -86,22 +95,19 @@
                 <span class="login__title--grey">
                   <bolder> 1.</bolder> Caso não seja cadastrado, entre na aba de primeiro acesso</span>
                 <br />
-                <span class="login__title--grey">2. Não esqueça de adicionar "AL" antes do usuário cadastrado</span>
-                <br />
-                <span class="login__title--grey">3. Em caso de duvidas, acesse a pagina inicial e contate a instituição
+                <span class="login__title--grey">2. Em caso de duvidas, acesse a pagina inicial e contate a instituição
 
                 </span>
 
 
               </p>
-              <input type="text" placeholder="Usuário" name="user" />
+              <input type="text" placeholder="Usuário" name="usuario" content="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" />
               <input type="password" placeholder="Senha" name="senha" />
 
-
               <!-- botoes -->
+              <button type="submit"id="login-button" name="login" value="true">Login</button>
 
-              <button type="submit" id="login-button" onclick=$sql >Login</button>
-
+   
               <!-- fim dos botoes -->
             </form>
           </div>
