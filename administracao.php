@@ -127,7 +127,7 @@
       <div class="col-md-7 ">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4>Perfil
+            <h4>Cadastrar usuário
             </h4>
              </div>
               <div class="panel-body">
