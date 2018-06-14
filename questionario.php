@@ -9,6 +9,7 @@
     <title>Questionario</title>
     <meta name="description" content="Personal portfolio of Web Designer and Developer Samir Alibabic">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -100,7 +101,6 @@
                     <li>19</li>
                     <li>20</li>
                     <li>21</li>
-                    <li>22</li>
 
 
                 </ul>
@@ -179,7 +179,7 @@
                                 <option> Abaixo de 21</option>
                                 <option> Entre 21 e 25</option>
                                 <option> Entre 26 e 30</option>
-                                <option> Entre3 31 e 35</option>
+                                <option> Entre 31 e 35</option>
                                 <option> Entre 36 e 40</option>
                                 <option> Entre 41 e 45</option>
                                 <option> Acima de 45</option>
@@ -291,26 +291,18 @@
                             </select>
                             <!-- fim da resposta -->
 
-                            <h3>15. Após a graduação, você frequentou ou está frequentando algum curso de pós-graduação?</h3>
+                            <h3>15. Após a graduação, você frequentou ou está frequentando algum curso de pós-graduação? Se sim, qual?</h3>
                             <!-- Inicio da resposta -->
                             <select class="contatoAluno" name="pergunta15">
                                 <option>Selecione a resposta</option>
-                                <option> sim</option>
                                 <option> Não</option>
-                            </select>
-                            <!-- fim da resposta -->
-                            <h3>16. Se sim, Qual?</h3>
-                            <!-- Inicio da resposta -->
-                            <select class="contatoAluno" name="pergunta16">
-                                <option>Selecione a resposta</option>
-                                <option> Especialização ou MBA</option>
-                                <option> Mestrado</option>
-                                <option> Doutorado</option>
+                                <option> Sim, especialização ou MBA</option>
+                                <option> Sim, Mestrado</option>
+                                <option> Sim, Doutorado</option>
                             </select>
                             <!-- fim da resposta -->
 
-
-                            <h3>17. Quais a mudança mais marcante relacionada ocorreu na sua vida profissional como contribuição
+                            <h3>16. Quais a mudança mais marcante que ocorreram na sua vida profissional com contribuição
                                 do curso que concluiu?</h3>
                             <!-- Inicio da resposta -->
 
@@ -326,7 +318,7 @@
                             <!-- fim da resposta -->
 
 
-                            <h3>18. Entre as alternativas a seguir, assinale a situação que melhor expressa a perspectiva profissional
+                            <h3>17. Entre as alternativas a seguir, assinale a situação que melhor expressa a perspectiva profissional
                                 futura para a sua carreira:</h3>
                             <!-- Inicio da resposta -->
                             <select class="contatoAluno" name="pergunta18">
@@ -340,18 +332,7 @@
                             </select>
                             <!-- fim da resposta -->
 
-                            <h3>19. Com base em sua experiência como egresso, indique 3 (TRÊS) aspectos em que o curso deveria
-                                priorizar melhorias para qualificar melhor o formando para atuar no mercado de trabalho:</h3>
-                            <!-- Inicio da resposta -->
-                            <select class="contatoAluno" name="pergunta19">
-                                <option>Selecione a resposta</option>
-                                <option> Sim</option>
-                                <option> Não</option>
-                            </select>
-                            <!-- fim da resposta -->
-
-
-                            <h3>20. Qual o grau de relevância dos conteúdos ministrados durante a sua graduação para sua atuação
+                            <h3>18. Qual o grau de relevância dos conteúdos ministrados durante a sua graduação para sua atuação
                                 profissional?
                             </h3>
                             <!-- Inicio da resposta -->
@@ -364,7 +345,7 @@
                             </select>
                             <!-- fim da resposta -->
 
-                            <h3>21. No que se refere à sua cultura geral e desenvolvimento pessoal, você considera que a contribuição
+                            <h3>19. No que se refere à sua cultura geral e desenvolvimento pessoal, você considera que a contribuição
                                 do curso foi:</h3>
                             <!-- Inicio da resposta -->
                             <select class="contatoAluno" name="pergunta21">
@@ -376,14 +357,14 @@
                             </select>
                             <!-- fim da resposta -->
 
-                            <h3>22. Utilize o espaço abaixo para aprofundar sua opinião sobre algum ponto abordado pela avaliação
+                            <h3>20. Utilize o espaço abaixo para aprofundar sua opinião sobre algum ponto abordado pela avaliação
                                 ou sobre o qual ela não tratou, mas que você considera relevante e deseja se manifestar:</h3>
                             <textarea class="contatoindex" rows="5" cols="100" wrap="virtual" placeholder="Mensagem" id="resposta21"
                                 name="pergunta22"></textarea>
 
 
 
-                            <h3>23. Sugira alguma iniciativa ou projeto que possam ser promovidos pela Faculdade para manter
+                            <h3>21. Sugira alguma iniciativa ou projeto que possam ser promovidos pela Faculdade para manter
                                 o vínculo com seus ex-alunos:</h3>
                             <textarea class="contatoindex" rows="5" cols="100" wrap="virtual" placeholder="Mensagem" id="resposta22"
                                 name="pergunta23"></textarea>

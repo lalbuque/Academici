@@ -1,0 +1,16 @@
+.contatoAluno3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+.teste{
+width:350px;
+height: auto;
+
+}
+
+#dois{
+    float: right;
+}

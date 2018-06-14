@@ -19,6 +19,8 @@
     
     <title>Editar Perfil</title>
 
+    
+
 </head>
 
 <nav id="sidebar">
