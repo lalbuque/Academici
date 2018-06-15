@@ -224,35 +224,36 @@ return false;
                     <div class='add_meeting'>
                 
                         
-                          <form>
+                          <form method=post action='conexaoadicionaEvento.php'>
                             <div>
                             <label>Titulo</label>
-                            <input id="tituloEvento" type='text' placeholder=''>
+                            <input id="tituloEvento" type='text' placeholder='' name='titulo' >
                           </div>
                           <div>
                             <label>Local</label>
-                            <input id="enderecoEvento" type='text' placeholder='Endereço'>
+                            <input id="enderecoEvento" type='text' placeholder='Endereço' name='endereco'>
                           </div>
                           <div  class="eventosD">
                           <div>
                             <label >Data</label>
-                            <input id="dataEvento" type='date' placeholder=''>
+                            <input id="dataEvento" type='date' placeholder='' name='data'>
                           </div>
                           <div>
                             <label>Inicio</label>
-                            <input id="horarioinicioEvento" type='time' placeholder=''>
+                            <input id="horarioinicioEvento" type='time' placeholder='' name='inicio'>
                           </div>
                           <div>
                             <label>Fim</label>
-                            <input id="horarioFimEvento" type='time' placeholder=''>
+                            <input id="horarioFimEvento" type='time' placeholder='' name='fim'>
                           </div>
                           </div>
                           <div>
                             <label>Descrição</label>
-                            <textarea></textarea>
+                            <textarea name='descricao'></textarea>
                           </div>
+                          <button type="submit" id="button"  onclick=$sql>Cadastrar</button>
 
-                          <input id="button" type="submit" value="Adicionar">
+                          <!-- <input id="button" type="submit" value="Adicionar"> -->
                           </form>
                           
                       </div>
