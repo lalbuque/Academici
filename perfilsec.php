@@ -227,24 +227,24 @@ return false;
                           <form method=post action='conexaoadicionaEvento.php'>
                             <div>
                             <label>Titulo</label>
-                            <input id="tituloEvento" type='text' placeholder='' name='titulo' >
+                            <input id="tituloEvento" type='text' name='titulo' >
                           </div>
                           <div>
                             <label>Local</label>
-                            <input id="enderecoEvento" type='text' placeholder='Endereço' name='endereco'>
+                            <input id="enderecoEvento" type='text' name='endereco'>
                           </div>
                           <div  class="eventosD">
                           <div>
                             <label >Data</label>
-                            <input id="dataEvento" type='date' placeholder='' name='data'>
+                            <input id="dataEvento" type='date' name='data'>
                           </div>
                           <div>
                             <label>Inicio</label>
-                            <input id="horarioinicioEvento" type='time' placeholder='' name='inicio'>
+                            <input id="horarioinicioEvento" type='tyme' name='inicio'>
                           </div>
                           <div>
                             <label>Fim</label>
-                            <input id="horarioFimEvento" type='time' placeholder='' name='fim'>
+                            <input id="horarioFimEvento" type='tyme' name='fim'>
                           </div>
                           </div>
                           <div>

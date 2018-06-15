@@ -3,14 +3,17 @@ require_once("conexaoBanco.php");
 
 
 $titulo = $_POST['titulo'];
-$rua = $_POST['rua'];
+$endereco = $_POST['endereco'];
 $data = $_POST['data'];
-$admissao = $_POST['admissao'];
+$inicio = $_POST['inicio'];
+$fim = $_POST['fim'];
+$descricao = $_POST['descricao'];
 
 
-$sql= mysqli_query ($conexao, "INSERT INTO secretaria (titulo, rua, data, admissao) VALUES ('$titulo','$rua','$data','$admissao');");
+$sql= mysqli_query ($conexao, "INSERT INTO eventos (titulo, endereco, data, inicio, fim, descricao) 
+VALUES ('$titulo','$endereco','$data','$inicio','$fim','$descricao');");
 mysqli_close ($conexao);
 
 echo  "<script>alert('Dados gravados com sucesso');</script>";
-echo  "<script>location.href = 'administracao.php'; </script>";
+echo  "<script>location.href = 'perfilsec.php'; </script>";
 ?>
