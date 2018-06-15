@@ -17,6 +17,8 @@
     
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
+    
+
     <script src="https://use.fontawesome.com/e28a3a5c17.js"></script>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -502,7 +504,6 @@
 
 <body>
 
-
 <section id="perfilSecretaria">
   <div class="container">
     <div class="row">
@@ -513,56 +514,88 @@
           </div>
           <div class="panel-body">
             <div class="box box-info">
-                  <h3>Respostas questionârio</h3>
-                   <div >
-                     <div  id="donutchart1" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart2" style="width: 550px; height: 400px;float: right; "></div>
-                           </div>
-                    <div>
-                     <div  id="donutchart3" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart4" style="width: 550px; height: 400px;float: right; "></div>
-                       </div>
-                       <div >
-                         <div  id="donutchart5" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart6" style="width: 550px; height: 400px;float: right; "></div>
-                           </div>
-                        <div>
-                         <div  id="donutchart7" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart8" style="width: 550px; height: 400px;float: right; "></div>
-                          </div>
-                          
-                          <div  id="donutchart9" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart10" style="width: 550px; height: 400px;float: right; "></div>
-                          </div>
-                          <div >
-                     <div  id="donutchart11" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart12" style="width: 550px; height: 400px;float: right; "></div>
-                           </div>
-                    <div>
-                     <div  id="donutchart13" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart14" style="width: 550px; height: 400px;float: right; "></div>
-                       </div>
-                       <div >
-                         <div  id="donutchart15" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart16" style="width: 550px; height: 400px;float: right; "></div>
-                           </div>
-                        <div>
-                         <div  id="donutchart17" style="width: 550px; height: 400px; float: left; "> </div>
-                                <div  id="donutchart18" style="width: 550px; height: 400px;float: right; "></div>
-                          </div>
-                          
-                          <div  id="donutchart19" style="width: 550px; height: 400px; float: left; "> </div>
-                          </div>
+                  <h3 style="float:left;">Respostas:</h3> 
+                  <a  type="button" value="Print this page" onClick="window.print()">
+                  <span style="float:right;  display: block;-webkit-border-radius: 30px;  -moz-border-radius: 30px;  border-radius: 30px;  background-color: #FFF;
+                  -webkit-box-shadow: 1px 1px 5px #808080;  -moz-box-shadow: 1px 1px 5px #808080;  box-shadow: 1px 1px 5px #808080;  width: 50px; height: 50px;
+                   padding-top:10px;  margin:10px;  line-height: 30px;  text-align: center;  position: relative; "   class="glyphicon glyphicon-print"></span></a>
+                  
+                 
+                  <select onchange="location = this.value;" style = "display: block; border: 0px; padding: 10px; width: 100% ; font-size: 16px; border: 2px solid #BEBEBE; border-radius:5px;" >
+                                <option value="#donutchart1">Selecionar questão a ser consultada.</option>
+                                <option value="#donutchart1"> Ano de formação do aluno</option>
+                                <option value="#donutchart2"> Quantidade de semestres que o aluno demorou para concluir o curso</option>
+                                <option value="#donutchart3"> Quantidade de alunos que trancaram o curso durante a graduação</option>
+                                <option value="#donutchart4"> Quantidade de alunos que realizaram estagio remunerado durante a graduação</option>                                
+                                <option value="#donutchart5"> Genêro</option>
+                                <option value="#donutchart6"> Idade</option>                                
+                                <option value="#donutchart7"> Alunos que se formaram e:</option>                                                              
+                                <option value="#donutchart8"> Meios utilizados para procurado emprego:</option>                                                                
+                                <option value="#donutchart9"> Opinião dos alunos sobre a inserção no mercado de trabalho:</option>                                                            
+                                <option value="#donutchart10" > Atividade profissional exercida pelos ex alunos atualmente:</option>
+                                <option value="#donutchart11" > Área de atuação profissional atual:</option>                                
+                                <option value="#donutchart12" > Porte da empresa onde trabalha:</option>
+                                <option value="#donutchart13" > Função/cargo atual:</option>                                
+                                <option value="#donutchart14" > Faixa salárial:</option>                                                              
+                                <option value="#donutchart15" > Número de alunos que frequentou ou está frequentando algum curso de pós-graduação:</option>                                                                
+                                <option value="#donutchart16" > Mudança mais marcante que ocorreram na vida profissional dos ex alunos com contribuição do curso que concluiu:</option>                                                            
+                                <option value="#donutchart17" > Situação que melhor expressa a perspectiva profissional futura dos ex alunos para a sua carreira:</option>
+                                <option value="#donutchart18" > Grau de relevância dos conteúdos ministrados durante a sua graduação para sua atuação profissional:</option>                                
+                                <option value="#donutchart19" > Contribuição atual referente a cultura geral e desenvolvimento pessoal do ex aluno:</option>
+                                
+                                
+                </select>
 
-                       </div>
+
+
+<div  id="donutchart1" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+<hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+   <div  id="donutchart2" style="width: 800px; height: 600px; margin-left:180px; padding:0px;"></div>
+   <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+      <div  id="donutchart3" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+      <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+         <div  id="donutchart4" style="width: 800px; height: 600px; margin-left:180px;"></div>
+         <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+              <div  id="donutchart5" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+              <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                  <div  id="donutchart6" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                  <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                     <div  id="donutchart7" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                        <div  id="donutchart8" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                        <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                          <div  id="donutchart9" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                          <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                            <div  id="donutchart10" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                            <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                              <div  id="donutchart11" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                              <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                <div  id="donutchart12" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                                <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                  <div  id="donutchart13" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                                  <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                    <div  id="donutchart14" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                                    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                     <div  id="donutchart15" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                                     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                       <div  id="donutchart16" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                                       <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                         <div  id="donutchart17" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                                         <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                           <div  id="donutchart18" style="width: 800px; height: 600px; margin-left:180px;"></div>
+                                           <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                                               <div  id="donutchart19" style="width: 800px; height: 600px; margin-left:180px;"> </div>
+                                               <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+                          
+                        </div>
                      </div>
                   </div>
                 </div>
               </div>
            </div>
         </div> 
+        
     </section>
-  
 </body>  
 
   </html>
