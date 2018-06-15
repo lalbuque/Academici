@@ -175,70 +175,64 @@
                       <tr>
                         <td>QUI</td>
                         <td>
-                          <span class="date">28/ JUN</span>
+                          <span class="date">30/ JUN</span>
                         </td>
                         <td>
                           <img src="http://www.lemieux-design.net/img/clock.png" alt="Time" />
                         </td>
-                        <td>15:00 - 16:00</td>
+                        <td>15:00 - 17:00</td>
                         <td>
                           <img src="http://www.lemieux-design.net/img/map-pin.png" alt="Location" />
                         </td>
                         <td>Faculdade de Tecnologia de Barueri
-                          <br /> Av. Carlos Capriotti, 123
-                          <br /> Centro, Barueri
                           <br />
                           <a href="https://www.google.com.br/maps/place/Faculdade+de+Tecnologia+de+Barueri/@-23.5083266,-46.8646239,15z/data=!4m2!3m1!1s0x0:0x1c28540aac26cba0?sa=X&ved=0ahUKEwik7NDgtrPbAhWETZAKHSecBZ8Q_BIItAEwCw">Get Directions &raquo;</a>
                         </td>
                         <td>
-                          NOME
-                          <br /> Descrição
+                          Palestra Blockchange
+                          <br /> Descrição: Palestre pratica sobre Blockchange, realizada pela IMB.
                         </td>
                       </tr>
                       <tr>
                         <td>QUI</td>
                         <td>
-                          <span class="date">28/ JUN</span>
+                          <span class="date">02/ AGO </span>
                         </td>
                         <td>
                           <img src="http://www.lemieux-design.net/img/clock.png" alt="Time" />
                         </td>
-                        <td>18:00 - 18:30</td>
+                        <td>14:00 - 18:30</td>
                         <td>
                           <img src="http://www.lemieux-design.net/img/map-pin.png" alt="Location" />
                         </td>
                         <td>Faculdade de Tecnologia de Barueri
-                          <br /> Av. Carlos Capriotti, 123
-                          <br /> Centro, Barueri
                           <br />
                           <a href="https://www.google.com.br/maps/place/Faculdade+de+Tecnologia+de+Barueri/@-23.5083266,-46.8646239,15z/data=!4m2!3m1!1s0x0:0x1c28540aac26cba0?sa=X&ved=0ahUKEwik7NDgtrPbAhWETZAKHSecBZ8Q_BIItAEwCw">Get Directions &raquo;</a>
                         </td>
                         <td>
-                          NOME
-                          <br /> Descrição
+                          A mulher no mercado de TI
+                          <br /> 
                         </td>
                       </tr>
                       <tr>
                         <td>SEX</td>
                         <td>
-                          <span class="date">29/ JUN</span>
+                          <span class="date">30/ AGO</span>
                         </td>
                         <td>
                           <img src="http://www.lemieux-design.net/img/clock.png" alt="Time" />
                         </td>
-                        <td>19:00 - 20:00 </td>
+                        <td>14:00 - 20:00 </td>
                         <td>
                           <img src="http://www.lemieux-design.net/img/map-pin.png" alt="Location" />
                         </td>
                         <td>Faculdade de Tecnologia de Barueri
-                          <br /> Av. Carlos Capriotti, 123
-                          <br /> Centro, Barueri
                           <br />
                           <a href="https://www.google.com.br/maps/place/Faculdade+de+Tecnologia+de+Barueri/@-23.5083266,-46.8646239,15z/data=!4m2!3m1!1s0x0:0x1c28540aac26cba0?sa=X&ved=0ahUKEwik7NDgtrPbAhWETZAKHSecBZ8Q_BIItAEwCw">Get Directions &raquo;</a>
                         </td>
                         <td>
-                          NOME
-                          <br /> Descrição
+                          Feira de empregos.
+                          <br />
                         </td>
                       </tr>
 
