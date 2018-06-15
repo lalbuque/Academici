@@ -9,7 +9,6 @@
     <title>Questionario</title>
     <meta name="description" content="Personal portfolio of Web Designer and Developer Samir Alibabic">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -59,13 +58,15 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="main-menu-items">
                     <ul class="nav navbar-nav">
-                        <li>
-                            <a href="login.php">Login</a>
-                        </li>
-                        <li>
-                            <a href="verificacaoacesso.php">Primeiro acesso</a>
-                        </li>
-
+                    <li>
+              <a href="login.php">Ex-Aluno</a>
+            </li>  
+          <li>
+              <a href="login.php">Administração Acadêmica</a>
+            </li>
+            <li>
+              <a href="verificacaoacesso.php">Primeiro acesso</a>
+            </li>
                     </ul>
                 </div>
             </div>
@@ -180,7 +181,7 @@
                                 <option> Abaixo de 21</option>
                                 <option> Entre 21 e 25</option>
                                 <option> Entre 26 e 30</option>
-                                <option> Entre 31 e 35</option>
+                                <option> Entre3 31 e 35</option>
                                 <option> Entre 36 e 40</option>
                                 <option> Entre 41 e 45</option>
                                 <option> Acima de 45</option>
