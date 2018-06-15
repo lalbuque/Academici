@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/verificacaoacesso.css">
 
+
+
   <script src="https://samiralibabic.github.io/portfolio/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -55,8 +57,11 @@
         </div>
         <div class="collapse navbar-collapse navbar-right" id="main-menu-items">
           <ul class="nav navbar-nav">
-            <li>
-              <a href="login.php">Login</a>
+          <li>
+              <a href="login.php">Ex-Aluno</a>
+            </li>  
+          <li>
+              <a href="login.php">Administração Acadêmica</a>
             </li>
             <li>
               <a href="verificacaoacesso.php">Primeiro acesso</a>
@@ -81,18 +86,14 @@
             <li>Questionario</li>
           </ul>
           <div class="form-wrapper">
-            <form id="form1" method="post" action="conexaoverificacao.php">
+            <form method="post" action="conexaoverificacao.php">
             <div class="section is-active">
-              
               <h3>Insira os dados abaixo:</h3>
-              
               <input type="text" name="nome" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
               <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444">
               <input type="text" name="data_nascimento" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
               <button type="submit" id="login-button" onclick=$sql>Login</button>
-              <script>
-                            
-              </script>
+
             </div>
             
          </form>

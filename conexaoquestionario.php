@@ -1,13 +1,12 @@
 
 <?php
+
 $host ="localhost";
 $user = "Admin";
 $pass ="admin";
 $banco="academici";
 $con = @mysqli_connect($host, $user, $pass) or die(mysqli_error());
 mysqli_select_db($con,$banco) or die (mysqli_error());
-mysql_query("SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', 
-character_set_database = 'utf8', character_set_server = 'utf8'");
 
 ?>
 
