@@ -282,35 +282,39 @@ return false;
                   <div class="box box-info">
 
                     <!-- Conteudo ******************************** Inicio -->
-                    <form>
+                    <form method="post" action="ConexaoSecCadAluno.php" >
                       <div>
-                        <label>Nome</label>
-                        <input id="nome" type='text' placeholder=''>
+                        <label>Nome Completo</label>
+                        <input id="nome" type='text' name='nome_completo'/>
                       </div>
                       <div>
+
                         <label>CPF</label>
-                        <input id="cpf" type='text' placeholder=''>
+                        <input id="cpf" type='text' name='cpf' />
                       </div>
                       <div class="eventosD">
-                        <div >
-                          <label>Nascimento</label>
-                          <input id="datanascimento" type='date' placeholder=''>
+                        <div>
+                          <label>Data de Nascimento</label>
+                          <input id="datanascimento" type='text' name='data_nascimento'/>
                         </div>
                       </div>
                       <div>
                           <label>Curso</label>
-                          <input id="curso" type='text' placeholder=''>
+                          <input id="curso" type='text' name='curso' />
                         </div>
                         <div>
                           <label>Instituição</label>
-                          <input id="instituicao" type='text' placeholder=''>
+                          <input id="instituicao" type='text' name='universidade' />
                         </div>
-                        <div class="eventosD" >
+                        <div class="eventosD">
                           <div>
-                            <label>Formação</label>
-                            <input id="dataformacao" type='date' placeholder=''>
+                            <label>Data Formação</label>
+                            <input id="dataformacao" type='text' name='data_formacao' />
                           </div>
-                         <input id="button" type="submit" value="Cadastrar">
+                         <!-- //<input id="button" type="submit" value="Cadastrar" onclick=$sql> -->
+
+                                
+                <button type="submit" id="button"  onclick=$sql>Cadastrar</button>
                     </form>
 
 

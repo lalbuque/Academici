@@ -43,7 +43,7 @@ if(isset($_POST['usuario'])){
                   $get = mysqli_query($conexao, "SELECT * FROM secretaria WHERE usuario = '$usuario' AND senha = '$senha' " );
                   $num = mysqli_num_rows($get);
                   
-                  echo "<script>location.href='perfilSec.php';</script>";
+                  echo "<script>location.href='perfilsec.php';</script>";
                     
                    
                     }

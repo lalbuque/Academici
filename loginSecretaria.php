@@ -90,7 +90,7 @@
 
             <form method="post"  class="login__form"  action="loginconexaoSecretaria.php" role="form">
               <p class="login__title">Insira seu Usuário e senha
-                <br />
+              <br />
                 <span class="login__title--grey">LEIA ATENTAMENTE AS INSTRUÇÔES</span>
                 <br />
                 <span class="login__title--grey">ADMINISTRADOR ACADEMICO:</span>
@@ -112,7 +112,7 @@
        
 
               <!-- botoes -->
-              <button type="submit"id="login-button" name="login" value="true">Login</button>
+              <button type="submit" id="login-button" name="login" value="true">Login</button>
 
    
               <!-- fim dos botoes -->

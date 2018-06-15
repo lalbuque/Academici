@@ -48,7 +48,7 @@
           </li> 
           
           <li>
-                <a href="login.php">
+                <a href="loginadm.php">
                 <span class="glyphicon glyphicon-off"></span>
                 </a>
          </li>
@@ -141,25 +141,25 @@
 <div class="container">
 
 <!-- formulario -->
-<form class="form-inline">
+<form class="form-inline" method=post action="cadastraSec.php">
   <div class="form-group">
-       <input type="text" class="form-control" id="nombre" placeholder="Nome Completo">
+       <input type="text" class="form-control" id="nombre" name='nome_completo' placeholder="Nome_Completo"/>
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="descripcion" placeholder="CPF">
+       <input type="text" class="form-control" id="descripcion"name='cpf'  placeholder="cpf"/>
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="duracion" placeholder="Cargo">
+       <input type="text" class="form-control" id="duracion" name='cargo' placeholder="Cargo"/>
   </div>
 
   <div class="form-group">
-       <input type="date" class="form-control" id="prioridad" placeholder="Data de admissão">
+       <input type="text" class="form-control" id="prioridad"  name ='admissao' placeholder="Data de admissão"/>
   </div>
 
   <div class="form-group">
-  <button type="button" onClick="alta()" class="btn btn-info">Salvar</button></div>
+  <button type="submit" onclick=$sql class="btn btn-info">Salvar</button></div>
 </form>
 
 
