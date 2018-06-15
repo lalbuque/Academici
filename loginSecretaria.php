@@ -1,15 +1,3 @@
-<?php require_once("conexaoBanco.php"); 
-require_once("conexaoverificacao2.php");
-require_once("verifica-usuario.php");
-usuarioEstaLogado();
-
-
-// $nome_completo = $_SESSION['idalunos'];
-
-// $cpf = $_SESSION["cpf"];
-// $data_nascimento = $_SESSION["data_nascimento"];
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -18,7 +6,7 @@ usuarioEstaLogado();
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Primeiro Acesso</title>
+  <title>login</title>
   <meta name="description" content="Personal portfolio of Web Designer and Developer Samir Alibabic">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,6 +14,7 @@ usuarioEstaLogado();
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://samiralibabic.github.io/portfolio/css/normalize.css">
+
 
   <!-- Google Font montserrat -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -42,9 +31,7 @@ usuarioEstaLogado();
   <!-- css da pagina -->
   <link rel="stylesheet" href="style/static.css">
   <link rel="stylesheet" href="style/login.css">
-  <link rel="stylesheet" href="style/verificacaoacesso.css">
-
-
+  
 
   <script src="https://samiralibabic.github.io/portfolio/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -78,83 +65,80 @@ usuarioEstaLogado();
             <li>
               <a href="verificacaoacesso.php">Primeiro acesso</a>
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
 
-    <!-- Inicio do cofmrulario de primeiro acesso -->
-    <div class="form-acesso" id="form">
+    <!-- div de instrução -->
+    <div class="instrucao">
+      <!-- Inicio do cofmrulario de login -->
+      <div class="div-form hero-text-box">
+        <div class="container">
+          <div class="login" data-state="">
+          <?php 
+                        if(isset($erro)) 
+                            if(count($erro) > 0){ ?>
+                                <div class="alert alert-danger">
+                                    <?php foreach($erro as $msg) echo "$msg <br>"; ?>
+                                </div>
+                            <?php 
+                            }
+                            ?>
 
-      <div class="container-acesso">
-        <div class="wrapper">
-          <ul class="steps">
-            <li>Verificação de acesso </li>
-            <li class="is-active">Completar cadastro</li>
-            <li>Questionario</li>
-          </ul>
+            <form method="post"  class="login__form"  action="loginconexaoSecretaria.php" role="form">
+              <p class="login__title">Insira seu Usuário e senha
+                <br />
+                <span class="login__title--grey">LEIA ATENTAMENTE AS INSTRUÇÔES</span>
+                <br />
+                <span class="login__title--grey">ADMINISTRADOR ACADEMICO:</span>
+                <br />
+                <span class="login__title--grey">
+                  <bolder> 1.</bolder> Insira usuario e senha cadastrados pelo administrador do sistema da sua instutuição</span>
+                <br />
+                <span class="login__title--grey">            
+                          <bolder> 2.</bolder> Caso não seja cadastrado, entre em contato com o administrador do sistema da sua instituição</span>
 
 
- 
-          <div class="form-wrapper">
-          
-            <form method="POST" action="conexaoverificacao.php">
-              <div class="section is-active" id="fieldset">
-                <h3>Insira os dados abaixo:</h3>
-                <div class="dados-pessoais">
-                  <div class="cadastro">
-                  
-                   
-                  
-                    <input type="text" name="nome_completo" class="input-cadastro" value="<?= usuarioLogadoNome(); ?>" readonly/>
-                    <input type="text" name="cpf" class="input-cadastro" value="<?= usuarioLogadoCPF();  ?>"readonly/>
-                    <input type="text" name="data_nascimento" class="input-cadastro"  value="<?= usuarioLogadoDATA(); ?>" readonly/>
-                    
+                </span>
 
 
+              </p>
+              <input type="text" placeholder="Usuário" name="usuario" content="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" />
+              <input type="password" placeholder="Senha" name="senha" />
 
+       
 
-                    <input type="text" name="email" class="input-cadastro" placeholder="Email. Ex: joaosilva@academici.com">
-                </div>
-                <div class="cadastro">
-                  <input type="text" name="empresa_atual" class="input-cadastro" placeholder="Empresa Atual*">
-                  <input type="text" name="cargo_atual" class="input-cadastro"  placeholder="Cargo*">
-                  <input type="text" name="admissao_ano" class="input-cadastro"  placeholder="Ano de Admissão">
-                  <select class="contatoAluno" name="nivel_cargo">
-                    <option>Selecione o nível*</option>
-                    <option> Auxiliar/Operacional </option>
-                    <option> Técnico </option>
-                    <option> Estágio </option>
-                    <option> Júnior </option>
-                    <option> Pleno </option>
-                    <option> Sênior </option>
-                    <option> Supervisão/Coordenação </option>
-                    <option> Gerência </option>
-                    <option> Diretoria </option>
+              <!-- botoes -->
+              <button type="submit"id="login-button" name="login" value="true">Login</button>
 
-                  </select>
-                </div>
-                <div class="cadastro">
-                  <input type="text" name="usuario" class="input-cadastro"  placeholder="Usuario*">
-                  <input type="password" name="senha" class="input-cadastro"  placeholder="Senha*">
-                  <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*">
-                </div>
-                
-                <button type="submit" id="login-button" onclick=$sql>Login</button>
-
-              </div>
+   
+              <!-- fim dos botoes -->
             </form>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    <!-- Fim do cofmrulario de primeiro acesso -->
   </header>
 
- 
+  <footer id="login-footer" class="row contact">
+    <h3 class="text-center">Contact</h3>
+    <div class="col-xs-10 col-xs-offset-1 text-center">
+      <p>
+        Você também pode nos encontrar nas redes sociaislike.
+      </p>
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+      <i class="fa fa-cc" aria-hidden="true"></i>
+    </div>
+    <br>
+  </footer>
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -164,7 +148,7 @@ usuarioEstaLogado();
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
 
-  <script src="javascript/verificacaoacesso.js"></script>
+
 
 
 </body>
