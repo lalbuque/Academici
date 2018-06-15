@@ -1,3 +1,6 @@
+<?php require_once("conexaoBanco.php"); 
+ 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -86,13 +89,13 @@
             <li>Questionario</li>
           </ul>
           <div class="form-wrapper">
-            <form method="post" action="conexaoverificacao.php">
+            <form method="post" action="teste.php">
             <div class="section is-active">
               <h3>Insira os dados abaixo:</h3>
-              <input type="text" name="nome" id="name" placeholder="Nome Completo. Ex: Luis da dilva">
+              <input type="text" name="nome_completo"  placeholder="Nome Completo. Ex: Luis da dilva">
               <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444">
-              <input type="text" name="data_nascimento" id="dataNasc" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
-              <button type="submit" id="login-button" onclick=$sql>Login</button>
+              <input type="text" name="data_nascimento" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+              <button type="submit" id="login-button" >Login</button>
 
             </div>
             

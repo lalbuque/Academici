@@ -1,3 +1,15 @@
+<?php require_once("conexaoBanco.php"); 
+require_once("conexaoverificacao2.php");
+require_once("verifica-usuario.php");
+usuarioEstaLogado();
+
+
+// $nome_completo = $_SESSION['idalunos'];
+
+// $cpf = $_SESSION["cpf"];
+// $data_nascimento = $_SESSION["data_nascimento"];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -78,19 +90,31 @@
       <div class="container-acesso">
         <div class="wrapper">
           <ul class="steps">
-            <li>Verificação de acesso</li>
+            <li>Verificação de acesso </li>
             <li class="is-active">Completar cadastro</li>
             <li>Questionario</li>
           </ul>
+
+
+ 
           <div class="form-wrapper">
-            <form method="post" action="conexaoverificacao.php">
+          
+            <form method="POST" action="conexaoverificacao.php">
               <div class="section is-active" id="fieldset">
                 <h3>Insira os dados abaixo:</h3>
                 <div class="dados-pessoais">
-                  <<div class="cadastro">
-                    <input type="text" name="nome_completo" class="input-cadastro" placeholder="Nome Completo. Ex: Luis da dilva">
-                    <input type="text" name="cpf" class="input-cadastro"  placeholder="CPF. Ex: 44444444444">
-                    <input type="text" name="data_nascimento" class="input-cadastro"  placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+                  <div class="cadastro">
+                  
+                   
+                  
+                    <input type="text" name="nome_completo" class="input-cadastro" value="<?= usuarioLogadoNome(); ?>" readonly/>
+                    <input type="text" name="cpf" class="input-cadastro" value="<?= usuarioLogadoCPF();  ?>"readonly/>
+                    <input type="text" name="data_nascimento" class="input-cadastro"  value="<?= usuarioLogadoDATA(); ?>" readonly/>
+                    
+
+
+
+
                     <input type="text" name="email" class="input-cadastro" placeholder="Email. Ex: joaosilva@academici.com">
                 </div>
                 <div class="cadastro">
