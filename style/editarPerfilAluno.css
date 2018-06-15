@@ -75,3 +75,36 @@
     background: #1abc9d;
   }
   
+
+  form{
+    text-align:left;
+  }
+  
+  #file-upload {
+      position: absolute;
+      left: -9999px;
+  }
+  
+  label[for="file-upload"]{
+    padding:0.5em;  
+    display:inline-block;
+    border-top: grey 0.5px solid;
+    border-bottom:  grey 0.5px solid;
+    cursor:pointer;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    border-radius: 8%;
+    border: solid 0.5px gray;
+    margin-top: 0vh;
+    padding-top: 0vh;
+  }
+  #filename{
+      background-color: #e5eae9;
+    padding:0.5em;
+    float:left;
+    width:50%;
+    white-space: nowrap;
+    overflow:hidden;
+    background:darken(#9b59b6 ,10%);
+  }

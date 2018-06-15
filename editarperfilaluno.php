@@ -200,6 +200,13 @@
       
   </select>
 
+                    <form method="post" enctype="multipart/form-data" action="">
+                    <span id="filename">Selecionar arquivo</span>
+                    <label for="file-upload">Selecionar Foto de Perfil
+                      <input type="file" id="file-upload">
+                    </label>
+                  </form>
+
     <input  type="submit" value="Salvar">
      
     
