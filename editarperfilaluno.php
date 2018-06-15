@@ -37,7 +37,7 @@
     </li>
 
     <li>
-        <a href="loginaluno.php">
+        <a href="login.php">
         <span class="glyphicon glyphicon-off"></span>
         </a>
     </li>
