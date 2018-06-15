@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="style/designealuno.css">
     
-    <link rel="stylesheet" href="style/resultadoquest.css">
+    <link rel="stylesheet" href="style/resultadoquest.css.css">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
@@ -586,8 +586,8 @@
                                            <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
                                                <div  id="donutchart19" style="width: 800px; height: 600px; margin-left:180px;"> </div>
                                                <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
-                       
-                          </div>
+                          
+                        </div>
                      </div>
                   </div>
                 </div>
@@ -596,7 +596,6 @@
         </div> 
         
     </section>
-    
 </body>  
 
   </html>
