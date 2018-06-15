@@ -269,11 +269,11 @@
 
                 <div class="box-body">
                   <div class="form">
-                    <form action="perfilaluno.php">
+                    <form action="enviaAluno.php">
                       <!-- <input type="hidden" value="gabrielepgsantos@outlook.com" name="email" > -->
-                      <input class="contatoAluno" type="text" required maxlength="60" placeholder="E-mail">
+                      <input class="contatoAluno" type="text" name="email" required maxlength="60" placeholder="E-mail">
 
-                      <select class="contatoAluno">
+                      <select class="contatoAluno" name="assunto"/>
                         <option>Selecione o assunto</option>
                         <option>Informações</option>
                         <option>Reclamação</option>
@@ -281,7 +281,7 @@
                         <option>Informações sobre eventos</option>
                       </select>
 
-                      <textarea class="contatoAluno" name="Mensagem" rows="10" cols="60" wrap="virtual" placeholder="Mensagem"></textarea>
+                      <textarea class="contatoAluno" name="mensagem" rows="10" cols="60" wrap="virtual" placeholder="Mensagem"></textarea>
 
                       <input type="submit" value="Enviar">
                     </form>

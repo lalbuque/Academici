@@ -149,23 +149,23 @@ O Aluno, por meio da faculdade, se mante atualizado, tendo informações sobre n
 
 <!--inicio formulario contato-->
 
-<div id="form">
+<form method="post"  action="envia.php">
 
 <h3 class="text-center">Contato</h3>
 
 <!--formulario-->
 
-<input class="contatoindex" type="text" required maxlength="30" placeholder="Nome completo">
+<input class="contatoindex" type="text" name="nome_completo" required maxlength="30" placeholder="Nome completo"/>
 
-<input class="contatoindex" type="E-mail" required placeholder="E-mail">
+<input class="contatoindex" type="E-mail" name="email" required placeholder="E-mail"/>
 
-<input class="contatoindex" type="Tel" placeholder="Telefone">
+<input class="contatoindex" type="Tel" name="telefone" placeholder="Telefone"/>
 
-<textarea class="contatoindex" name="Mensagem" rows="10" cols="60" wrap="virtual" placeholder="Mensagem"></textarea>
+<textarea class="contatoindex" name="mensagem" rows="10" cols="60" wrap="virtual" placeholder="Mensagem"/></textarea>
 
 <input type="submit" value="Enviar">
 
-</div><!-- fim div contato -->
+</form><!-- fim div contato -->
 
 <!--fim formulario contato-->
 

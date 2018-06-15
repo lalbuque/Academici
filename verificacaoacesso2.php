@@ -102,20 +102,18 @@ usuarioEstaLogado();
             <form method="POST" action="conexaoverificacao.php">
               <div class="section is-active" id="fieldset">
                 <h3>Insira os dados abaixo:</h3>
+                <p class="instrucao"> Seus dados foram enconstrados na base de dados 
+                da faculdade.
+                <br />
+                 Para que possa prosseguir com seu cadastro
+                complete os dados abaixo.</p>
                 <div class="dados-pessoais">
                   <div class="cadastro">
-                  
-                   
-                  
+                
                     <input type="text" name="nome_completo" class="input-cadastro" value="<?= usuarioLogadoNome(); ?>" readonly/>
                     <input type="text" name="cpf" class="input-cadastro" value="<?= usuarioLogadoCPF();  ?>"readonly/>
                     <input type="text" name="data_nascimento" class="input-cadastro"  value="<?= usuarioLogadoDATA(); ?>" readonly/>
-                    
-
-
-
-
-                    <input type="text" name="email" class="input-cadastro" placeholder="Email. Ex: joaosilva@academici.com">
+                <input type="text" name="email" class="input-cadastro" placeholder="Email. Ex: joaosilva@academici.com">
                 </div>
                 <div class="cadastro">
                   <input type="text" name="empresa_atual" class="input-cadastro" placeholder="Empresa Atual*">

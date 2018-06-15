@@ -91,10 +91,21 @@
           <div class="form-wrapper">
             <form method="post" action="teste.php">
             <div class="section is-active">
-              <h3>Insira os dados abaixo:</h3>
+              <h3>Seja Bem Vindo ao Academici!</h3>
+              <p class="instrucao">
+      
+
+1. Insira os dados abaixos para que possamos verificar seu pré cadastro.
+<br/>2. Para que você possa logar na nossa pagina é necessário que o administrador
+academico de sua unidade, ja o tenha cadastrado.<br/>
+              </p>
               <input type="text" name="nome_completo"  placeholder="Nome Completo. Ex: Luis da dilva">
               <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444">
-              <input type="date" name="data_nascimento" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+              <input type="text " name="data_nascimento" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+
+    
+
+
               <button type="submit" id="login-button" >Login</button>
 
             </div>
