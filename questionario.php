@@ -59,10 +59,10 @@
                 <div class="collapse navbar-collapse navbar-right" id="main-menu-items">
                     <ul class="nav navbar-nav">
                     <li>
-              <a href="login.php">Ex-Aluno</a>
+              <a href="loginAluno.php">Ex-Aluno</a>
             </li>  
           <li>
-              <a href="login.php">Administração Acadêmica</a>
+              <a href="loginSecretaria.php">Administração Acadêmica</a>
             </li>
             <li>
               <a href="verificacaoacesso.php">Primeiro acesso</a>
