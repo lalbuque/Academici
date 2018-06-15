@@ -494,7 +494,7 @@
       </li>  
 
       <li>
-        <a href="login.php">
+        <a href="loginsecretaria.php">
         <span class="glyphicon glyphicon-off"></span>
         </a>
     </li>

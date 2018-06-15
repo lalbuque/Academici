@@ -48,7 +48,7 @@ pergunta9, pergunta10, pergunta11, pergunta12, pergunta13, pergunta14,
 
 mysqli_close($con);
 
-echo "<script>location.href='login.php';</script>";
+echo "<script>location.href='loginaluno.php';</script>";
 
 ?> 
 
