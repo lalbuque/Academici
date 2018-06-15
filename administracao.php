@@ -155,7 +155,7 @@
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="prioridad"  name ='admissao' placeholder="Data de admissão"/>
+       <input type="date" class="form-control" id="prioridad"  name ='admissao' placeholder="Data de admissão"/>
   </div>
 
   <div class="form-group">
