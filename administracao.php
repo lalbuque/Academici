@@ -141,25 +141,25 @@
 <div class="container">
 
 <!-- formulario -->
-<form class="form-inline">
+<form class="form-inline" method="post" action="cadastrarsec.php" >
   <div class="form-group">
-       <input type="text" class="form-control" id="nombre" placeholder="Nome Completo">
+       <input type="text" class="form-control" id="nombre" placeholder="Nome Completo" name="nome_completo">
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="descripcion" placeholder="CPF">
+       <input type="text" class="form-control" id="descripcion" placeholder="CPF" name="cpf">
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="duracion" placeholder="Cargo">
+       <input type="text" class="form-control" id="duracion" placeholder="Cargo" name="cargo">
   </div>
 
   <div class="form-group">
-       <input type="date" class="form-control" id="prioridad" placeholder="Data de admissão">
+       <input type="text" class="form-control" id="prioridad" placeholder="Data de admissão" name="admissao">
   </div>
 
   <div class="form-group">
-  <button type="button" onClick="alta()" class="btn btn-info">Salvar</button></div>
+  <button type="submit" onclick=("alta()",$sql)  class="btn btn-info">Salvar</button></div>
 </form>
 
 
