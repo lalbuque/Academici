@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -285,7 +285,7 @@ return false;
                     <!-- Conteudo ******************************** Inicio -->
                     <form method="post" action="ConexaoSecCadAluno.php" >
                       <div>
-                        <label>Nome Completo</label>
+                        <label>Nome</label>
                         <input id="nome" type='text' name='nome_completo'/>
                       </div>
                       <div>
@@ -295,8 +295,8 @@ return false;
                       </div>
                       <div class="eventosD">
                         <div>
-                          <label>Data de Nascimento</label>
-                          <input id="datanascimento" type='text' name='data_nascimento'/>
+                          <label>Nascimento</label>
+                          <input id="datanascimento" type='date' name='data_nascimento'/>
                         </div>
                       </div>
                       <div>
@@ -309,13 +309,13 @@ return false;
                         </div>
                         <div class="eventosD">
                           <div>
-                            <label>Data Formação</label>
-                            <input id="dataformacao" type='text' name='data_formacao' />
+                            <label>Formação</label>
+                            <input id="dataformacao" type='date' name='data_formacao' />
                           </div>
                          <!-- //<input id="button" type="submit" value="Cadastrar" onclick=$sql> -->
 
                                 
-                <button type="submit" id="button"  onclick=$sql>Cadastrar</button>
+                           <button type="submit" id="button"  onclick=$sql>Cadastrar</button>
                     </form>
 
 
@@ -346,5 +346,4 @@ return false;
 </body>
 
 </html>
-=======
->>>>>>> 9ec0a6b4698651017112ca0dffbda5910c5ee4a8
+
