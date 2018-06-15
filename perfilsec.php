@@ -42,7 +42,7 @@ return false;
 }
 });
 });
-// ]]></script>
+// ]></script>
 
   <title>Perfil Secretaria</title>
 
