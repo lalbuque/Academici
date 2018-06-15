@@ -1,7 +1,4 @@
 <?php require_once("conexaoBanco.php");  
-    
-  
-    
 
 session_start();
 function usuarioEstaLogado() 

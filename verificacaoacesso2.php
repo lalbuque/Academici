@@ -105,9 +105,9 @@ usuarioEstaLogado();
                   
                    
                   
-                    <input type="text" name="nome_completo" class="input-cadastro" value="<?= usuarioLogadoNome(); ?>"/>
-                    <input type="text" name="cpf" class="input-cadastro" value="<?= usuarioLogadoCPF();  ?>" />
-                    <input type="text" name="data_nascimento" class="input-cadastro"  value="<?= usuarioLogadoDATA(); ?>" />
+                    <input type="text" name="nome_completo" class="input-cadastro" value="<?= usuarioLogadoNome(); ?>" readonly/>
+                    <input type="text" name="cpf" class="input-cadastro" value="<?= usuarioLogadoCPF();  ?>"readonly/>
+                    <input type="text" name="data_nascimento" class="input-cadastro"  value="<?= usuarioLogadoDATA(); ?>" readonly/>
                     
 
 
