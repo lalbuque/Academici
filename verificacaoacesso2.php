@@ -134,9 +134,9 @@ usuarioEstaLogado();
                   </select>
                 </div>
                 <div class="cadastro">
-                  <input type="text" name="usuario" class="input-cadastro"  placeholder="Usuario*">
-                  <input type="password" name="senha" class="input-cadastro"  placeholder="Senha*">
-                  <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*">
+                  <input type="text" name="usuario" class="input-cadastro"  placeholder="Usuario*" required>
+                  <input type="password" name="senha" class="input-cadastro"  placeholder="Senha*"required>
+                  <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*"required>
                 </div>
                 
                 <button type="submit" id="login-button" onclick=$sql>Login</button>
