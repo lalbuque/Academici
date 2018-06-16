@@ -109,8 +109,6 @@
               <input type="text" placeholder="Usuário" name="usuario" content="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" required />
               <input type="password" placeholder="Senha" name="senha" required/>
 
-       
-
               <!-- botoes -->
               <button type="submit" id="login-button" name="login" value="true">Login</button>
 
