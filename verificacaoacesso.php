@@ -92,9 +92,9 @@
             <form method="post" action="teste.php">
             <div class="section is-active">
               <h3>Insira os dados abaixo:</h3>
-              <input type="text" name="nome_completo"  placeholder="Nome Completo. Ex: Luis da dilva">
-              <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444">
-              <input type="text " name="data_nascimento" placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+              <input type="text" name="nome_completo"  placeholder="Nome Completo. Ex: Luis da dilva" required>
+              <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444"required>
+              <input type="text " name="data_nascimento" placeholder="Data de Nascimento. Ex: DD/MM/AAAA" required>
               <button type="submit" id="login-button" >Login</button>
 
             </div>

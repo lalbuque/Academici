@@ -88,9 +88,9 @@
                 <h3>Insira os dados abaixo:</h3>
                 <div class="dados-pessoais">
                   <<div class="cadastro">
-                    <input type="text" name="nome_completo" class="input-cadastro" placeholder="Nome Completo. Ex: Luis da dilva">
-                    <input type="text" name="cpf" class="input-cadastro"  placeholder="CPF. Ex: 44444444444">
-                    <input type="text" name="data_nascimento" class="input-cadastro"  placeholder="Data de Nascimento. Ex: DD/MM/AAAA">
+                    <input type="text" name="nome_completo" class="input-cadastro" placeholder="Nome Completo. Ex: Luis da dilva" required>
+                    <input type="text" name="cpf" class="input-cadastro"  placeholder="CPF. Ex: 44444444444"required>
+                    <input type="text" name="data_nascimento" class="input-cadastro"  placeholder="Data de Nascimento. Ex: DD/MM/AAAA" required>
                 </div>
                 
                
