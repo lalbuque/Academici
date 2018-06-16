@@ -4,11 +4,6 @@ require_once("verifica-usuario.php");
 usuarioEstaLogado();
 
 
-// $nome_completo = $_SESSION['idalunos'];
-
-// $cpf = $_SESSION["cpf"];
-// $data_nascimento = $_SESSION["data_nascimento"];
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -102,7 +97,7 @@ usuarioEstaLogado();
             <form method="POST" action="conexaoverificacao.php">
               <div class="section is-active" id="fieldset">
                 <h3>Insira os dados abaixo:</h3>
-                <p class="instrucao"> Seus dados foram enconstrados na base de dados 
+                <p class="instrucao"> Seus dados foram encontrados na base de dados 
                 da faculdade.
                 <br />
                  Para que possa prosseguir com seu cadastro
