@@ -227,16 +227,16 @@ return false;
                           <form method=post action='conexaoadicionaEvento.php'>
                             <div>
                             <label>Titulo</label>
-                            <input id="tituloEvento" type='text' name='titulo' >
+                            <input id="tituloEvento" type='text' name='titulo' required >
                           </div>
                           <div>
                             <label>Local</label>
-                            <input id="enderecoEvento" type='text' name='endereco'>
+                            <input id="enderecoEvento" type='text' name='endereco'required>
                           </div>
                           <div  class="eventosD">
                           <div>
                             <label >Data</label>
-                            <input id="dataEvento" type='date' name='data'>
+                            <input id="dataEvento" type='date' name='data'required>
                           </div>
                           <div>
                             <label>Inicio</label>
@@ -249,7 +249,7 @@ return false;
                           </div>
                           <div>
                             <label>Descrição</label>
-                            <textarea name='descricao'></textarea>
+                            <textarea name='descricao' required></textarea>
                           </div>
                           <button type="submit" id="button"  onclick=$sql>Cadastrar</button>
 
@@ -287,31 +287,31 @@ return false;
                     <form method="post" action="ConexaoSecCadAluno.php" >
                       <div>
                         <label>Nome</label>
-                        <input id="nome" type='text' name='nome_completo'/>
+                        <input id="nome" type='text' name='nome_completo' required/>
                       </div>
                       <div>
 
                         <label>CPF</label>
-                        <input id="cpf" type='text' name='cpf' />
+                        <input id="cpf" type='text' name='cpf' required />
                       </div>
                       <div class="eventosD">
                         <div>
                           <label>Nascimento</label>
-                          <input id="datanascimento" type='date' name='data_nascimento'/>
+                          <input id="datanascimento" type='date' name='data_nascimento' required/>
                         </div>
                       </div>
                       <div>
                           <label>Curso</label>
-                          <input id="curso" type='text' name='curso' />
+                          <input id="curso" type='text' name='curso' required/>
                         </div>
                         <div>
                           <label>Instituição</label>
-                          <input id="instituicao" type='text' name='universidade' />
+                          <input id="instituicao" type='text' name='universidade' required/>
                         </div>
                         <div class="eventosD">
                           <div>
                             <label>Formação</label>
-                            <input id="dataformacao" type='date' name='data_formacao' />
+                            <input id="dataformacao" type='date' name='data_formacao' required/>
                           </div>
                          <!-- //<input id="button" type="submit" value="Cadastrar" onclick=$sql> -->
 
