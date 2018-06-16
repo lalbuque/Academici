@@ -1,0 +1,31 @@
+    #steps-questionario li{
+    margin: 10px;
+    }
+
+  
+
+/* CSS do radio */
+
+#radios{
+    display: unset;
+ 
+}
+
+
+
+
+/* fim do css */
+
+
+.paragrafo{
+    display: inline-flex;
+  
+}
+
+#resposta21{
+    border: 2px solid #1abc9d;
+}
+
+#resposta22{
+    border: 2px solid #1abc9d;
+}

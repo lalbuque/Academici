@@ -149,7 +149,7 @@ O Aluno, por meio da faculdade, se mante atualizado, tendo informações sobre n
 
 <!--inicio formulario contato-->
 
-<form id="form" method="post"  action="envia.php">
+<form method="post"  action="envia.php">
 
 <h3 class="text-center">Contato</h3>
 

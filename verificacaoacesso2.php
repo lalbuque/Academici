@@ -4,6 +4,11 @@ require_once("verifica-usuario.php");
 usuarioEstaLogado();
 
 
+// $nome_completo = $_SESSION['idalunos'];
+
+// $cpf = $_SESSION["cpf"];
+// $data_nascimento = $_SESSION["data_nascimento"];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -97,18 +102,20 @@ usuarioEstaLogado();
             <form method="POST" action="conexaoverificacao.php">
               <div class="section is-active" id="fieldset">
                 <h3>Insira os dados abaixo:</h3>
-                <p class="instrucao"> Seus dados foram encontrados na base de dados 
-                da faculdade.
-                <br />
-                 Para que possa prosseguir com seu cadastro
-                complete os dados abaixo.</p>
                 <div class="dados-pessoais">
                   <div class="cadastro">
-                
+                  
+                   
+                  
                     <input type="text" name="nome_completo" class="input-cadastro" value="<?= usuarioLogadoNome(); ?>" readonly/>
                     <input type="text" name="cpf" class="input-cadastro" value="<?= usuarioLogadoCPF();  ?>"readonly/>
                     <input type="text" name="data_nascimento" class="input-cadastro"  value="<?= usuarioLogadoDATA(); ?>" readonly/>
-                <input type="text" name="email" class="input-cadastro" placeholder="Email. Ex: joaosilva@academici.com">
+                    
+
+
+
+
+                    <input type="text" name="email" class="input-cadastro" placeholder="Email. Ex: joaosilva@academici.com">
                 </div>
                 <div class="cadastro">
                   <input type="text" name="empresa_atual" class="input-cadastro" placeholder="Empresa Atual*">
@@ -129,9 +136,9 @@ usuarioEstaLogado();
                   </select>
                 </div>
                 <div class="cadastro">
-                  <input type="text" name="usuario" class="input-cadastro"  placeholder="Usuario*" required>
-                  <input type="password" name="senha" class="input-cadastro"  placeholder="Senha*"required>
-                  <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*"required>
+                  <input type="text" name="usuario" class="input-cadastro"  placeholder="Usuario*">
+                  <input type="password" name="senha" class="input-cadastro"  placeholder="Senha*">
+                  <input type="password" name="confirmarSenha" class="input-cadastro" id="anoConclusao" placeholder="Confirmar Senha*">
                 </div>
                 
                 <button type="submit" id="login-button" onclick=$sql>Login</button>

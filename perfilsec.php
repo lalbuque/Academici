@@ -287,31 +287,31 @@ return false;
                     <form method="post" action="ConexaoSecCadAluno.php" >
                       <div>
                         <label>Nome</label>
-                        <input id="nome" type='text' name='nome_completo'required/>
+                        <input id="nome" type='text' name='nome_completo'/>
                       </div>
                       <div>
 
                         <label>CPF</label>
-                        <input id="cpf" type='text' name='cpf' required/>
+                        <input id="cpf" type='text' name='cpf' />
                       </div>
                       <div class="eventosD">
                         <div>
                           <label>Nascimento</label>
-                          <input id="datanascimento" type='date' name='data_nascimento'required/>
+                          <input id="datanascimento" type='date' name='data_nascimento'/>
                         </div>
                       </div>
                       <div>
                           <label>Curso</label>
-                          <input id="curso" type='text' name='curso' required/>
+                          <input id="curso" type='text' name='curso' />
                         </div>
                         <div>
                           <label>Instituição</label>
-                          <input id="instituicao" type='text' name='universidade' required/>
+                          <input id="instituicao" type='text' name='universidade' />
                         </div>
                         <div class="eventosD">
                           <div>
                             <label>Formação</label>
-                            <input id="dataformacao" type='date' name='data_formacao'required />
+                            <input id="dataformacao" type='date' name='data_formacao' />
                           </div>
                          <!-- //<input id="button" type="submit" value="Cadastrar" onclick=$sql> -->
 
