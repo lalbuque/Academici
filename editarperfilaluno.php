@@ -194,7 +194,7 @@
       <option>	Júnior		</option>
       <option>	Pleno		</option>
       <option>	Sênior		</option>
-      <option>	Supervisão/Coordenação		</option>
+      <option>	Supervisão/Coordenação </option>
       <option>	Gerência		</option>
       <option>	Diretoria		</option>
       

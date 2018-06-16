@@ -94,8 +94,8 @@
               
 
               </p>
-              <input type="text" placeholder="Usuário" name="usuario" content="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" />
-              <input type="password" placeholder="Senha" name="senha" />
+              <input type="text" placeholder="Usuário" name="usuario" content="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" required />
+              <input type="password" placeholder="Senha" name="senha" required />
 
        
 
