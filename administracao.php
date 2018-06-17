@@ -143,11 +143,15 @@
 <!-- formulario -->
 <form class="form-inline" method=post action="cadastraSec.php">
   <div class="form-group">
-       <input type="text" class="form-control" id="nombre" name='nome_completo' placeholder="Nome_Completo"/>
+       <input type="text" class="form-control" id="nombre" name='nome_completo' placeholder="Nome Completo"/>
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="descripcion"name='cpf'  placeholder="cpf"/>
+       <input type="text" class="form-control" id="email" name='email' placeholder="E-mail"/>
+  </div>
+
+  <div class="form-group">
+       <input type="text" class="form-control" id="descripcion"name='cpf'  placeholder="CPF"/>
   </div>
 
   <div class="form-group">
