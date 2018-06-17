@@ -22,6 +22,31 @@ function usuarioLogadoData()
 
 }
 
+function usuarioLogadoData() 
+{
+    return $_SESSION["ra"]; 
+
+}
+
+function usuarioLogadoData() 
+{
+    return $_SESSION["universidade"]; 
+
+}
+
+function usuarioLogadoData() 
+{
+    return $_SESSION["cuso"]; 
+
+}
+
+function usuarioLogadoData() 
+{
+    return $_SESSION["formacao"]; 
+
+}
+
+
 function logarUsuario($usuario) 
 {
     $_SESSION["usuario"] = true;

@@ -91,7 +91,12 @@
           <div class="form-wrapper">
             <form method="post" action="teste.php">
             <div class="section is-active">
-              <h3>Insira os dados abaixo:</h3>
+            <h3 > Seja Bem Vindo ao Academici! </h3 >
+<p class="instrucao">
+1. Insira os dados abaixo para completar o cdastro.
+<br/> 2. Para que você possa completar o cadastro é necessário que o administrador academico da unidade em que se formou, ja o tenha cadastrado. <br />
+</p >
+         
               <input type="text" name="nome_completo"  placeholder="Nome Completo. Ex: Luis da dilva" required>
               <input type="text" name="cpf" id="cpf" placeholder="CPF. Ex: 44444444444"required>
               <input type="text " name="data_nascimento" placeholder="Data de Nascimento. Ex: DD/MM/AAAA" required>

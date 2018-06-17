@@ -106,7 +106,7 @@
                     <!-- /input-group -->
                   </div>
                   <div class="col-sm-6">
-                    <h4 style="color:#014444;">Gabriele Peixoto Guedes Santos</h4>
+                    <h4 style="color:#014444;">Leticia Albuquerque Cintra</h4>
                     </span>
                   </div>
                   <div class="clearfix"></div>
@@ -128,7 +128,7 @@
                   <div class="bot-border"></div>
 
                   <div class="col-sm-5 col-xs-6 title ">Formação: </div>
-                  <div id="formacaoAluno" class="col-sm-7">12/2010</div>
+                  <div id="formacaoAluno" class="col-sm-7">12/2017</div>
                   <div class="clearfix"></div>
                   <div class="bot-border"></div>
 

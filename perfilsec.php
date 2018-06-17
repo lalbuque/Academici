@@ -123,14 +123,14 @@ return false;
                     <!-- /input-group -->
                   </div>
                   <div class="col-sm-6">
-                    <h4 style="color:#014444;">Edgar Ramirez</h4>
+                    <h4 style="color:#014444;">Daniela Morena Gomes</h4>
                     </span>
                   </div>
                   <div class="clearfix"></div>
                   <hr style="margin:5px 0 5px 0;">
 
                   <div class="col-sm-5 col-xs-6 title ">ID:</div>
-                  <div id="idSec" class="col-sm-7">1020304050</div>
+                  <div id="idSec" class="col-sm-7">1</div>
                   <div class="clearfix"></div>
                   <div class="bot-border"></div>
 

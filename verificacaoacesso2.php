@@ -101,7 +101,12 @@ usuarioEstaLogado();
           
             <form method="POST" action="conexaoverificacao.php">
               <div class="section is-active" id="fieldset">
-                <h3>Insira os dados abaixo:</h3>
+              < h3 > Insira os dados abaixo: </ h3 >
+<p  class = " instrucao " > Seus dados foram enconstrados na base de dados
+da faculdade.
+<Br />
+Para que podem prosseguir com seu cadastro
+complete os dados abaixo. </p>
                 <div class="dados-pessoais">
                   <div class="cadastro">
                   

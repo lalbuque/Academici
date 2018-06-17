@@ -1,3 +1,8 @@
+<?php require_once("conexaoBanco.php"); 
+ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <html>

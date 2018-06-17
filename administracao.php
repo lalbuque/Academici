@@ -102,7 +102,7 @@
 
 
                   <div class="col-sm-5 col-xs-6 title ">Nome:</div>
-                  <div id="nomeADM" class="col-sm-7">André Almeida</div>
+                  <div id="nomeADM" class="col-sm-7">Andre Almeida</div>
                   <div class="clearfix"></div>
                   <div class="bot-border"></div>
 
