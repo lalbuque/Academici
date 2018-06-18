@@ -147,7 +147,7 @@
   </div>
 
   <div class="form-group">
-       <input type="text" class="form-control" id="email" name='email' placeholder="E-mail"/>
+       <input type="text" class="form-control" id="email" name='usuario' placeholder="E-mail"/>
   </div>
 
   <div class="form-group">
